@@ -1,0 +1,3267 @@
+/* 
+===============
+   kimgigun css start
+=============== 
+*/
+.kal-gg-common-con{width:87%; height:3000px; float:right; margin-left:5px; margin-top:40px;}
+.kal-gg-gnb { width:100%; height:40px; margin:0 auto; position:fixed; top:0; text-align:center;  background-color: #0180a3; padding:0; maring:0; z-index:5;}
+.kal-gg-gnb-li{float:left; font-size: 18px; width:100px; background-color:none; }
+.kal-gg-gnb li{display:inline-block; width:10%; text-align:center; padding:10px; color:white; cursor:pointer; }
+.kal-gg-gnb-hover:hover{display:inline-block; width:10%;  text-align:center; padding:12px; color:white; cursor:pointer; background: #186686;	 } 
+.kal-gg-body{width:100%; margin:0 auto;}
+.kal-gg-nav {list-style-type:none; maring:0; padding:0; width:180px; height:auto; float:left;  position:fixed; top:40px; left:0;}
+.kal-gg-nav div{border-bottom:1px solid #d4d4d4;}
+.kal-gg-nav-drop{font-size: 11px; text-align: center; display:block; height:30px; padding-top:6px; display: none;}
+.kal-gg-nav-drop:hover {font-size: 11px; text-align: center; display:block; height:30px; padding-top:8px; background-color: #d4d4d4;/*  display: none; */}
+.kal-gg-flight-con{width:87%; height:auto; float:right; margin-left:5px; margin-top:40px; text-align:center; background-color:#f2f2f2;}
+.kal-gg-flight-inner-con{width:80%; margin:0 auto; margin-top:70px;}
+.kal-gg-flight-con-title{font-size: 30px; color: #666666; width:100%; height:50px; margin:0 auto; text-align: center;}
+.kal-gg-flight-con-subtitle{font-size: 20px; color: #666666; margin-top:60px;  border-top: 1px solid #dadada; padding-top: 50px; clear:both;}
+.kal-gg-flight-con-table{text-align:center; width:100%; border:1px solid #dddddd; margin:50px auto 10px auto; }
+.kal-gg-flight-con-table tr{color: #6a7373; border: 1px solid #dddddd;}
+.kal-gg-flight-con-table tr th{color: #6a7373; border: 1px solid #dddddd; text-align:center; font-size: 14px;} 
+.kal-gg-flight-con-table tr td{color: #6a7373; border: 1px solid #dddddd; background-color: white; color: #737373; font-size:12px; height:35px; width:30%;} 
+.kal-gg-flight-con-search{ text-align:center;   width:100%; height:auto;	}
+.kal-gg-flight-con-search div{/* padding-left:10%;   */margin:10px 5px;  padding-bottom: 10px; width:48%;  float:left;}
+.kal-gg-flight-con-search-cal{text-align:center; width:100%;  clear:both;}
+.kal-gg-flight-con-table2{text-align:center; width:83%; float:left; border:1px solid #dddddd; margin:20px auto; }
+.kal-gg-flight-con-table2 tr{color: #6a7373; border: 1px solid #dddddd; }
+.kal-gg-flight-con-table2 tr th{color: #6a7373; border: 1px solid #dddddd; text-align:center; font-size: 14px;} 
+.kal-gg-flight-con-table2 tr td{color: #6a7373; border: 1px solid #dddddd; background-color: white; color: #737373; font-size:12px; height:35px; width:10%;} 
+.kal-gg-flight-con-update-button{float:right; font-size: 10px; }
+.kal-gg-flight-con-clear{clear:both;}
+.kal-gg-flight-con-btn{background-color:#0180a3; color:white; font-size:10px; border-radius:3px; cursor:pointer; padding:4px 10px;display:inline-block;float:right; margin-right:5px;
+						box-shadow:0 1px 2px 1px rgba(0,0,0,0.2);
+						border:1px solid #0180a3;}
+.kal-gg-flight-con-btm{height:200px;}		
+.kal-gg-flight-con-btn-add{float:right; height:35px; width:13%; position:relative; top:42px; right:60px;}	
+.kal-gg-route-con{width:87%; height:auto; float:right; margin-left:5px; margin-top:40px; text-align:center; background-color:#f2f2f2;}
+.kal-gg-route-inner-con{width:80%; margin:0 auto; margin-top:70px;}
+.kal-gg-route-con-title{font-size: 30px; color: #666666; width:100%; height:50px; margin:0 auto; text-align: center;}
+.kal-gg-route-con-subtitle{font-size: 20px; color: #666666; margin-top:60px;  border-top: 1px solid #dadada; padding-top: 50px; clear:both;}
+.kal-gg-route-con-table{text-align:center; width:100%; border:1px solid #dddddd; margin:50px auto 10px auto; }
+.kal-gg-route-con-table tr{color: #6a7373; border: 1px solid #dddddd; }
+.kal-gg-route-con-table tr th{color: #6a7373; border: 1px solid #dddddd; text-align:center; font-size: 14px;} 
+.kal-gg-route-con-table tr td{color: #6a7373; border: 1px solid #dddddd; background-color: white; color: #737373; font-size:12px; height:35px; width:30%;  padding-top:7px;} 
+.kal-gg-route-con-search{ text-align:center;   width:100%; height:auto;	}
+.kal-gg-route-con-search div{/* padding-left:10%;   */margin:10px 5px;  padding-bottom: 10px; width:32%;  float:left;}
+.kal-gg-route-con-search-cal{text-align:center; width:100%;  clear:both;}
+.kal-gg-route-con-table2{text-align:center; width:83%; float:left; border:1px solid #dddddd; margin:20px auto; }
+.kal-gg-route-con-table2 tr{color: #6a7373; border: 1px solid #dddddd; }
+.kal-gg-route-con-table2 tr th{color: #6a7373; border: 1px solid #dddddd; text-align:center; font-size: 14px;} 
+.kal-gg-route-con-table2 tr td{color: #6a7373; border: 1px solid #dddddd; background-color: white; color: #737373; font-size:12px; height:35px; width:10%;  padding-top:10px;} 
+.kal-gg-route-con-update-button{float:right; font-size: 10px; }
+.kal-gg-route-con-clear{clear:both;}
+.kal-gg-route-con-btn{background-color:#0180a3;color:white;font-size:10px;border-radius:3px;	cursor:pointer;	padding:4px 10px;display:inline-block;float:right; margin-right:5px;
+					box-shadow:0 1px 2px 1px rgba(0,0,0,0.2);
+					border:1px solid #0180a3;}
+.kal-gg-route-con-btm{height:200px;}	
+.kal-gg-route-con-select{height:20px; background-image:url(${context}/resources/img/admin/sche/select.png); background-repeat:no-repeat; background-position: right center;
+            background-color: white;  width:80%; overflow: auto; -webkit-appearance: none;}	
+.kal-gg-route-con-btn-add{float:right; height:35px; width:13%; position:relative; top:42px; right:60px;}	
+.kal-gg-sche-con{width:87%; height:auto; float:right; margin-left:5px; margin-top:40px; text-align:center; background-color:#f2f2f2;}
+.kal-gg-sche-inner-con{width:80%; margin:0 auto; margin-top:70px;}
+.kal-gg-sche-con-title{font-size: 30px; color: #666666; width:100%; height:50px; margin:0 auto; text-align: center;}
+.kal-gg-sche-con-subtitle{font-size: 20px; color: #666666; margin-top:60px;  border-top: 1px solid #dadada; padding-top: 50px; clear:both;}
+.kal-gg-sche-con-table{text-align:center; width:100%; border:1px solid #dddddd; margin:50px auto 10px auto; }
+.kal-gg-sche-con-table tr{color: #6a7373; border: 1px solid #dddddd;}
+.kal-gg-sche-con-table tr th{color: #6a7373; border: 1px solid #dddddd; text-align:center; font-size: 14px;} 
+.kal-gg-sche-con-table tr td{color: #6a7373; border: 1px solid #dddddd; background-color: white; color: #737373; font-size:12px; height:35px; width:20%; padding-top:7px;} 
+.kal-gg-sche-con-search{ text-align:center;   width:100%; height:auto;	margin:30px;}
+.kal-gg-sche-con-search div{/* padding-left:10%;   */margin:10px 5px;  padding-bottom: 10px; width:32%;  float:left;}
+.kal-gg-sche-con-search-cal{text-align:center; width:100%;  clear:both;}
+.kal-gg-sche-con-table2{text-align:center; width:90%; border:1px solid #dddddd; margin:20px auto; }
+.kal-gg-sche-con-table2 tr{color: #6a7373; border: 1px solid #dddddd; }
+.kal-gg-sche-con-table2 tr th{color: #6a7373; border: 1px solid #dddddd; text-align:center; font-size: 14px;} 
+.kal-gg-sche-con-table2 tr td{color: #6a7373; border: 1px solid #dddddd; background-color: white; color: #737373; font-size:12px; height:35px; width:10%; padding-top:10px;} 
+.kal-gg-sche-con-update-button{float:right; font-size: 10px; }
+.kal-gg-sche-con-clear{clear:both;}
+.kal-gg-sche-con-btn{background-color:#0180a3;color:white;font-size:10px;border-radius:3px;	cursor:pointer;	padding:4px 10px;display:inline-block; float:right; margin-right:5px;
+					box-shadow:0 1px 2px 1px rgba(0,0,0,0.2);
+					border:1px solid #0180a3; right:20px;}
+.kal-gg-sche-con-btn2{background-color:#0180a3;color:white;font-size:10px;border-radius:3px;	cursor:pointer;	padding:4px 10px;display:inline-block; float:right; margin-left:10px;
+					box-shadow:0 1px 2px 1px rgba(0,0,0,0.2);
+					border:1px solid #0180a3;}					
+.kal-gg-sche-con-btm{height:200px;}		
+.kal-gg-sch-con-select{  height: 20px;  background-image: url(${context}/resources/img/admin/sche/select.png);   background-repeat:no-repeat; background-position: right center;
+           /*  background-color: white; */  width:80%; margin-right:20px; overflow: auto; -webkit-appearance: none;}	
+.kal-gg-sche-con-btn-td-none{background-color: none; border-right: none; border-bottom: none; border-left: none; border-right: none;}
+.kal-gg-sche-con-btn-add{float:right; height:35px; width:13%; position:relative; top:42px; right:60px; /* position: relative; ; position:relative; left:140px; bottom:80px; padding-top:5px; */}
+.kal-gg-sche-con-wrapper{width:100%;}
+.kal-gg-sche-con-table-wrapper{width:100%; }
+.kal-gg-sche-con-table2{text-align:center; width:83%; float:left; border:1px solid #dddddd; margin:20px auto; }
+.kal-gg-sche-con-table2 tr{color: #6a7373; border: 1px solid #dddddd; }
+.kal-gg-sche-con-table2 tr th{color: #6a7373; border: 1px solid #dddddd; text-align:center; font-size: 14px;} 
+.kal-gg-sche-con-table2 tr td{color: #6a7373; border: 1px solid #dddddd; background-color: white; color: #737373; font-size:12px; height:35px; width:10%;}
+.kal-gg-stat-con{width:87%; height:auto; float:right; margin-left:5px; margin-top:40px; text-align:center; background-color:#f2f2f2; z-index:1;}
+.kal-gg-stat-chart{width:100%; height:500px; margin:50px; auto;}
+/* login page css */
+.kal-gg-loginbox{width: 550px; height: auto;  margin:0 auto;}
+.kal-gg-loginbox-img{margin-top: 35%; margin-bottom:35px; text-align: center;}
+.kal-gg-loginbox-big-box{width:412px; height:auto; margin:0 auto;}
+.kal-gg-loginbox-box-id{width:390px; height:50px; border:1px solid #ccc; border-bottom:0; padding-left:20px;}
+.kal-gg-loginbox-box-pass{width:390px; height:50px; border:1px solid #ccc; padding-left:20px;}
+.kal-gg-loginbox-middle-text {font-size:13px; color:#767676; margin:20px 0px; }
+.kal-gg-loginbox-middle-text div{float:right;}
+.kal-gg-click-text-area{padding-left:20px;}
+.kal-gg-click-text-area a{text-decoration:none; color:#767676;}
+.kal-gg-loginbox-middle-text span{color:#ebebeb}
+.kal-gg-loginbox-login-btn{background-color:white; border:2px solid #0180a3; width:412px; height:60px; color:#0180a3; cursor: pointer;}
+.kal-gg-loginbox-login-btn:hover{background-color:#0180a3; border:2px solid #0180a3; width:412px; height:60px; color:white; cursor: pointer; transition:0.5s;}
+.kal-gg-loginbox-under{font-size:13px; color:#767676; margin:50px auto; text-align: center;} 
+.kal-gg-loginbox-under span{color:#767676; padding:0 10px;  }
+.kal-gg-loginbox-under a{margin-left:5px; color:#ebebeb}
+/* 
+===============
+   kimgigun css end
+=============== 
+*/
+/* 
+===============
+   jihoo css start
+   container
+=============== 
+*/
+.kal-res1-jh-res-wrapper{
+      width:100%;
+}
+
+/* 
+===============
+   reser-gnb
+=============== 
+*/
+
+.kal-res-jh-reser-gnb{
+	width:100%;
+	height:80px;
+	border-bottom:4px solid #0180a3;
+}
+.kal-res-jh-reser-gnb-logoBlock{
+	width:250px;
+	height:80px;
+	text-align:center;
+}
+.kal-res-jh-reser-gnb-logoBlock>img{
+	width:205px;
+	margin-top:25px;
+}
+.kal-res-jh-reser-gnb-calendarIconBlock{
+	width:30px;
+	height:80px;
+	position:relative;
+	bottom:80px;
+	left:260px;
+	text-align:center;
+}
+.kal-res-jh-reser-gnb-calendarIconBlock>img{
+	margin-top:30px;
+}
+.kal-res-jh-reser-gnb-scheduleBlock{
+	width:450px;
+	height:80px;
+	position:relative;
+	left:320px;
+	bottom:160px;
+}
+.kal-res-jh-reser-gnb-scheduleBlock>.placeInfo{
+	margin:0 5px;
+	font-size:14px;
+	font-weight:bold;
+	color:black;
+}
+.kal-res-jh-reser-gnb-placeInfo>img{
+	margin:0 5px;
+}
+.kal-res-jh-reser-gnb-dateInfo{
+	margin:0 5px;
+	font-size:15px;
+	font-weight:bold;
+	color:black;
+}
+.kal-res-jh-reser-gnb-seatInfo{
+	margin:0 5px;
+	font-size:15px;
+	font-weight:bold;
+	color:black;
+}
+.kal-res-jh-reser-gnb-backBtn{
+	width:90px;
+	height:80px;
+	position:relative;
+	left:50px;
+	font-weight:bold;
+	text-decoration:none;
+	color:white;
+	background-color:#0180a3;
+	border:1px solid #0180a3;
+	cursor:pointer;
+	box-shadow: 1px 1px 10px #888888;
+}
+.kal-res-jh-reser-gnb-backBtn:hover{
+	color:white;
+	border:1px solid #186686;
+	background:#094f68;
+	transition:0.5s;
+}
+.kal-res-jh-reser-gnb-fareSelect{
+	width:220px;
+	height:80px;
+	font-weight:bold;
+	font-size:14px;
+	position:relative;
+	bottom:81px;
+	left:490px;
+	text-align:center;
+	display:inline-block;
+}
+.kal-res-jh-reser-gnb-fareSelect>span{
+	position:relative;
+	top:32px;
+}
+.kal-res-jh-reser-gnb-passengerInfo{
+	width:220px;
+	height:80px;
+	font-weight:bold;
+	font-size:14px;
+	position:relative;
+	bottom:81px;
+	left:480px;
+	display:inline-block;
+	text-align:center;
+}
+.kal-res-jh-reser-gnb-passengerInfo>span{
+	position:relative;
+	top:32px;
+}
+.kal-res-jh-reser-gnb-payInfo{
+	width:220px;
+	height:80px;
+	font-weight:bold;
+	font-size:14px;
+	position:relative;
+	bottom:161px;
+	left:920px;
+	text-align:center;
+}
+.kal-res-jh-reser-gnb-payInfo>span{
+	position:relative;
+	top:32px;
+}
+.kal-res-jh-reser-gnb-confirm{
+	width:140px;
+	height:80px;
+	font-weight:bold;
+	font-size:14px;
+	position:relative;
+	bottom:241px;
+	left:1140px;
+	text-align:center;
+}
+.kal-res-jh-reser-gnb-confirm>span{
+	position:relative;
+	top:32px;
+}
+.kal-res-jh-reser-gnb-mainWrapper{
+	margin-top:110px;
+	width:100%;
+}
+
+/* 
+===============
+   res1 시작 
+=============== 
+*/
+.kal-res1-jh-subWrapper{
+	width:960px;
+	margin:0 auto;
+}
+.kal-res1-jh-bookingMainTitle>h1{
+	font-size:35px;
+	padding:50px 0;
+	font-weight:bold;
+}
+.kal-res1-jh-bookingSubTitle{
+	height:64px;
+	border-bottom:7px solid #0180a3;
+}
+.kal-res1-jh-bookingSubTitle>li>p{
+	width:480px;
+	height:50px;
+	float:left;
+	text-align:center;
+	font-size:26px;
+	cursor:pointer;
+	border-top-left-radius:3px;
+	border-top-right-radius:3px;
+	letter-spacing:-0.5px;
+	font-weight:normal;
+	padding-top:20px;
+}
+.kal-res1-jh-bookingSubTitle-domestic{
+	color:rgb(102,102,102);
+	background-color:rgb(223,233,233);
+	box-shadow:rgb(187, 187, 187)-2px -1px 2px 0px inset;
+}
+.kal-res1-jh-bookingSubTitle-international{
+	color:white;
+	background-color:rgb(1,128,163);
+}
+.kal-res1-jh-checkIcon{
+	background-image:url("/web/resources/img/reservation/checkIcon.png");
+	background-repeat:no-repeat;
+	width:30px;
+	height:18px;
+	position:relative;
+	display:inline-block;
+	right:190px;
+}
+.kal-res1-jh-bookingBox{
+	border:1px solid #0180a3;
+	margin-bottom:15px;
+}
+.kal-res1-jh-commonResTitle{
+	padding-top:40px;
+	text-align:center;
+	font-size:26px;
+	letter-spacing:-0.5px;
+}
+.kal-res1-jh-checkBlue{
+	width:50px;
+	height:50px;
+	display:inline-block;
+	background-repeat:no-repeat;
+	padding-right:150px;
+	font-weight:bold;
+	background-image:url("/web/resources/img/reservation/checkBlue.png");
+	position:relative;
+	top:23px;
+	right:160px;
+}
+.kal-res1-jh-checkWhite{
+	width:50px;
+	height:50px;
+	display:inline-block;
+	background-repeat:no-repeat;
+	background-image:url("/web/resources/img/reservation/checkWhite.png");
+	position:relative;
+	top:23px;
+	right:185px;
+}
+.kal-res1-jh-commonRes{
+	font-weight:bold;
+	cursor:pointer;
+}
+.kal-res1-jh-bonusRes{
+	color:#666;
+	cursor:pointer;
+}
+.kal-res1-jh-tripType{
+	margin:70px 32px 30px;
+	text-align:left;
+}
+.kal-res1-jh-tripType>img{
+	padding-right:15px;
+}
+.kal-res1-jh-tripType>span{
+	padding-right:25px;
+}
+.kal-res1-jh-tripDetails{
+	margin:0 auto;
+	text-align:center;
+}
+.kal-res1-jh-tripDetails input{
+	width:280px;
+	height:50px;
+	padding-left:10px;
+}
+.kal-res1-jh-departureArea-btn{
+	width:25px;
+	height:25px;
+	display:inline-block;
+	cursor:pointer;
+	border:none;
+	background:none;
+	background-image:url("/web/resources/img/reservation/location.png");
+	background-repeat:no-repeat;
+	position:relative;
+	left:295px;
+	bottom:38px;	
+}
+.kal-res1-jh-arrivalArea-btn{
+	width:25px;
+	height:25px;
+	display:inline-block;
+	cursor:pointer;
+	border:none;
+	background:none;
+	background-image:url("/web/resources/img/reservation/location.png");
+	background-repeat:no-repeat;
+	position:relative;
+	left:565px;
+	bottom:38px;	
+}
+.kal-res1-jh-dateSelect-btn{
+	width:25px;
+	height:25px;
+	display:inline-block;
+	cursor:pointer;
+	border:none;
+	background:none;
+	background-image:url("/web/resources/img/reservation/calendar.png");
+	background-repeat:no-repeat;
+	position:relative;
+	left:830px;
+	bottom:38px;	
+}
+.kal-res1-jh-selectSeatWrapper{
+	height:160px;
+	border-top:1px solid #0180a3;
+	border-bottom:1px solid #0180a3;
+	margin:35px auto;
+	text-align:center;
+}
+.kal-res1-jh-selectSeatWrapper>p{
+	padding-top:40px;
+	padding-bottom:30px;
+	font-size:15px;
+	color:red;	
+}
+.kal-res1-jh-selectSeat{
+	background-color:#0180a3;
+	width:150px;
+	color:white;
+	font-size:18px;
+	border-radius:3px;
+	cursor:pointer;
+	padding:7px 26px;
+	display:inline-block;
+	box-shadow:0 1px 2px 1px rgba(0,0,0,0.2);
+	border:1px solid #0180a3;
+}
+.kal-res1-jh-selectSeat:hover{
+	color:white;
+	border:1px solid #186686;
+	background:#094f68;
+	transition:0.5s;
+}
+.kal-res1-jh-submitWrapper{
+	text-align:center;
+}
+.kal-res1-jh-submitWrapper>p{
+	font-size:15px;
+	color:red;	
+}
+.kal-res1-jh-submit{
+	background-color:#0180a3;
+	width:150px;
+	color:white;
+	font-size:18px;
+	margin-top:30px;
+	margin-bottom:35px;
+	border-radius:3px;
+	cursor:pointer;
+	padding:7px 26px;
+	display:inline-block;
+	box-shadow:0 1px 2px 1px rgba(0,0,0,0.2);
+	border:1px solid #0180a3;
+}
+.kal-res1-jh-submit:hover{
+	color:white;
+	border:1px solid #186686;
+	background:#094f68;
+	transition:0.5s;
+}
+
+/* 
+===============
+   res2 시작 
+=============== 
+*/
+
+.kal-res2-jh-res-wrapper{
+      width:100%;
+}
+.kal-res2-jh-subWrapper{
+	width:960px;
+	margin:0 auto;
+	padding-top:80px;
+}
+.kal-res2-jh-mainTitle{
+	height:64px;
+	border-bottom:7px solid #0180a3;
+}
+.kal-res2-jh-mainTitle>li>p{
+	width:480px;
+	height:50px;
+	float:left;
+	text-align:center;
+	font-size:26px;
+	cursor:pointer;
+	border-top-left-radius:3px;
+	border-top-right-radius:3px;
+	letter-spacing:-0.5px;
+	font-weight:normal;
+	padding-top:20px;
+}
+.kal-res2-jh-mainTitle-text1{
+	color:rgb(102,102,102);
+	background-color:rgb(223,233,233);
+	box-shadow:rgb(187, 187, 187)-2px -1px 2px 0px inset;
+}
+.kal-res2-jh-mainTitle-text2{
+	color:white;
+	background-color:rgb(1,128,163);
+}
+.kal-res2-jh-paragraph1{
+	text-align:center;
+	border-top:1px solid #0180a3;
+}
+.kal-res2-jh-paragraph1>h2{
+	font-size:30px;
+	padding:40px 0;
+	font-weight:bold;
+}
+.kal-res2-jh-paragraph1>p{
+	font-size:15px;
+	color:red;
+	padding-bottom:40px;
+}
+.kal-res2-jh-paragraph1-box{
+	width:900px;
+	margin:0 auto;
+	margin-bottom:40px;
+}
+.kal-res2-jh-paragraph1-leftbox{
+	display:inline-block;
+	margin-right:50px;
+	width:400px;
+	line-height:3;
+	
+}
+.kal-res2-jh-paragraph1-leftbox-info{
+	background-color:#0180a3;
+	color:white;
+	font-weight:bold;
+}
+.kal-res2-jh-paragraph1-leftbox-subinfo{
+	border:1px solid #0180a3;
+	background:#efefef;
+	font-size:14.5px;
+}
+.kal-res2-jh-paragraph1-leftbox-flightinfo{
+	border:1px solid #0180a3;
+	border-top:none;
+	font-weight:bold;
+	font-size:15px;
+}
+.kal-res2-jh-paragraph1-rightbox{
+	display:inline-block;
+	width:400px;
+	line-height:3;
+}
+.kal-res2-jh-paragraph1-rightbox-info{
+	background-color:#0180a3;
+	color:white;
+	font-weight:bold;
+}
+.kal-res2-jh-paragraph1-rightbox-subinfo{
+	border:1px solid #0180a3;
+	background:#efefef;
+	font-size:14.5px;
+}
+.kal-res2-jh-paragraph1-rightbox-flightinfo{
+	border:1px solid #0180a3;
+	border-top:none;
+	font-weight:bold;
+	font-size:15px;
+}
+.kal-res2-jh-paragraph2{
+	text-align:center;
+	border-top:1px solid #0180a3;
+}
+.kal-res2-jh-paragraph2>h2{
+	font-size:30px;
+	padding:40px 0;
+	font-weight:bold;
+}
+.kal-res2-jh-paragraph2>p{
+	font-size:15px;
+	color:red;	
+}
+.kal-res2-jh-paragraph2-icon{
+	margin-top:30px;
+}
+.kal-res2-jh-paragraph2-icon-v{
+	background-image:url("/web/resources/img/reservation/reser2-v.png");
+	background-repeat:no-repeat;
+	display:inline-block;
+	padding-left:20px;
+	padding-right:20px;
+	background-position-y:2px;
+}
+.kal-res2-jh-paragraph2-icon-x{
+	background-image:url("/web/resources/img/reservation/reser2-x.png");
+	background-repeat:no-repeat;
+	display:inline-block;
+	padding-left:20px;
+	background-position-y:2px;
+}
+.kal-res2-jh-paragraph2 table{
+	margin:40px auto;
+}
+.kal-res2-jh-paragraph2 table tr td{ 
+	border:1px solid black;
+	font-weight:bold;
+	padding:5px 10px;
+	width:120px;
+}
+.kal-res2-jh-paragraph2 .firstcol{
+	background-color:#0180a3;
+	color:white;
+}
+.kal-res2-jh-confirmbox{
+	border:1px solid #0180a3;
+	text-align:center;
+	margin-bottom:15px;
+}
+.kal-res2-jh-confirmbox-info{
+	background:#0180a3;
+	padding:15px 0;
+}
+.kal-res2-jh-confirmbox-info>span{
+	padding:0 100px;
+	color:white;
+	font-weight:bold;
+	font-size:18px;
+}
+.kal-res2-jh-confirmbox-contents{
+	padding:20px 0;
+}
+.kal-res2-jh-confirmbox-contents>p{
+	font-size:14px;
+	text-align:left;
+	padding:2px 10px;
+}
+.kal-res2-jh-submitbox{
+	border:1px solid #0180a3;
+	text-align:center;
+	margin-bottom:30px;
+}
+.kal-res2-jh-submitbox-info{
+	background:#0180a3;
+	padding:15px 0;
+	color:white;
+	font-weight:bold;
+	font-size:18px;
+}
+.kal-res2-jh-submitbox-price{
+	font-weight:bold;
+	font-size:20px;
+	margin-top:20px;
+	margin-bottom:10px;
+}
+.kal-res2-jh-submitbox-text{
+	margin-bottom:20px;
+	font-size:15px;
+	color:red;	
+}
+.kal-res2-jh-submit{
+	background-color:#0180a3;
+	width:200px;
+	color:white;
+	font-size:18px;
+	border-radius:3px;
+	cursor:pointer;
+	padding:7px 26px;
+	display:inline-block;
+	box-shadow:0 1px 2px 1px rgba(0,0,0,0.2);
+	border:1px solid #0180a3;
+	margin-bottom:20px;
+}
+.kal-res2-jh-submit:hover{
+	color:white;
+	border:1px solid #186686;
+	background:#094f68;
+	transition:0.5s;
+}
+/* 
+===============
+   res3 시작 
+=============== 
+*/
+
+.kal-res3-jh-wrapper{
+	width:100%;
+}
+.kal-res3-jh-subwrapper{
+	width:980px;
+	margin:0 auto;
+}
+.kal-res3-jh-toptext{
+	padding-top:50px;
+}
+.kal-res3-jh-toptext>h2{
+	font-size:32px;
+	font-weight:bold;
+	padding-bottom:20px;
+}
+.kal-res3-jh-toptext>p{
+	font-size:14px;
+}
+.kal-res3-jh-toptext span{
+	color:red;
+	font-weight:bold;
+}
+.kal-res3-jh-passengerinfo{
+	width:720px;
+	height:50px;
+	margin-top:30px;
+	float:left;
+}
+.kal-res3-jh-passengerinfo-box1{
+	border:1px solid #0180a3;
+	padding:20px 20px 30px;
+}
+.kal-res3-jh-passengerinfo-box1-familynametext{
+	font-weight:bold;
+}
+.kal-res3-jh-passengerinfo-box1-aster{
+	padding-right:5px;
+	color:red;
+	font-weight:bold;
+}
+.kal-res3-jh-passengerinfo-box1-1{
+	display:inline-block;
+}
+.kal-res3-jh-familynameinput{
+	margin-top:10px;
+	padding:9px 10px;
+}
+.kal-res3-jh-passengerinfo-box1-2{
+	display:inline-block;
+}
+.kal-res3-jh-nameinput{
+	margin-top:10px;
+	padding:9px 10px;
+	display:inline-block;
+}
+.kal-res3-jh-familyname-span{
+	position:relative;
+	right:80%;
+	color:gray;
+	font-size:13px;
+}
+.kal-res3-jh-name-span{
+	position:relative;
+	right:73%;
+	color:gray;
+	font-size:13px;
+}
+.kal-res3-jh-passengerinfo-box1-gen{
+	padding-left:5px;
+	font-weight:bold;
+	color:red;
+}
+.kal-res3-jh-middletext{
+	margin-top:30px;
+}
+.kal-res3-jh-middletext>h2{
+	font-size:32px;
+	font-weight:bold;
+	padding-bottom:20px;
+}
+.kal-res3-jh-middletext>p{
+	font-size:14px;
+}
+.kal-res3-jh-middletext span{
+	color:red;
+	font-weight:bold;
+}
+.kal-res3-jh-passengerinfo-box2{
+	border:1px solid #0180a3;
+	padding:20px 20px 20px;
+	margin-top:30px;
+}
+.kal-res3-jh-passengerinfo-box2-phonenotext{
+	font-weight:bold;
+}
+.kal-res3-jh-phonenoinput{
+	margin-top:10px;
+	padding:9px 10px;
+}
+.kal-res3-jh-phoneno-span{
+	position:relative;
+	right:27%;
+	color:gray;
+	font-size:13px;
+}
+.kal-res3-jh-passengerinfo-box2-emailtext{
+	font-weight:bold;
+}
+.kal-res3-jh-email-span{
+	position:relative;
+	left:63%;
+	bottom:28px;
+	color:gray;
+	font-size:13px;
+}
+.kal-res3-jh-noticebox{
+	background:#0180a3;
+	padding:15px 0;
+	text-align:center;
+	margin-top:30px;
+}
+.kal-res3-jh-noticebox>span{
+	padding:0 100px;
+	color:white;
+	font-weight:bold;
+	font-size:18px;
+}
+.kal-res3-jh-noticecontents{
+	border:1px solid #0180a3;
+	padding:20px 20px;
+	font-size:14px;
+}
+.kal-res3-jh-confirmbox{
+	width:240px;
+	margin-top:30px;
+	border:1px solid #0180a3;
+	float:right;
+}
+.kal-res3-jh-confirmbox-toptext{
+	font-weight:bold;
+	font-size:22px;
+	background:#0180a3;
+	padding:10px 0;
+	color:white;
+	text-align:center;
+}
+.kal-res3-jh-confirmbox-box1{
+	text-align:center;
+	border-bottom:1px solid #0180a3;
+}
+.kal-res3-jh-confirmbox-box1 p{
+	font-size:14px;
+	padding:10px 0;
+}
+.kal-res3-jh-confirmbox-box1-text1{
+	padding-top:10px;
+	font-weight:bold;
+	font-size:18px;
+}
+.kal-res3-jh-confirmbox-box1-text2{
+	font-weight:bold;
+	font-size:18px;
+}
+.kal-res3-jh-detailbtn{
+	background-color:#0180a3;
+	width:160px;
+	color:white;
+	font-size:14px;
+	border-radius:3px;
+	cursor:pointer;
+	padding:7px 26px;
+	display:inline-block;
+	box-shadow:0 1px 2px 1px rgba(0,0,0,0.2);
+	border:1px solid #0180a3;
+	margin-bottom:20px;
+}
+.kal-res3-jh-detailbtn:hover{
+	color:white;
+	border:1px solid #186686;
+	background:#094f68;
+	transition:0.5s;
+}
+
+.kal-res3-jh-confirmbox-box2{
+	text-align:center;
+}
+.kal-res3-jh-confirmbox-box2>p{
+	font-size:14px;
+	padding:10px 0;
+}
+.kal-res3-jh-confirmbox-box2 p span{
+	display:block;
+	padding:5px 0;
+}
+.kal-res3-jh-confirmbox-box2-text1{
+	padding-top:10px;
+	font-weight:bold;
+	font-size:18px;
+}
+.kal-res3-jh-confirmbox-box2-text1-price{
+	font-weight:bold;
+}
+.kal-res3-jh-confirmbox-box2-text1-price>span{
+	font-size:22px;
+}
+.kal-res3-jh-reser3submit{
+	background-color:#0180a3;
+	width:160px;
+	color:white;
+	font-size:14px;
+	border-radius:3px;
+	cursor:pointer;
+	padding:7px 26px;
+	display:inline-block;
+	box-shadow:0 1px 2px 1px rgba(0,0,0,0.2);
+	border:1px solid #0180a3;
+	margin-bottom:15px;
+}
+.kal-res3-jh-reser3submit:hover{
+	color:white;
+	border:1px solid #186686;
+	background:#094f68;
+	transition:0.5s;
+}
+
+/* 
+===============
+   res4 시작 
+=============== 
+*/
+
+.kal-res4-jh-wrapper{
+	width:100%;
+}.kal-res4-jh-subwrapper{
+	width:980px;
+	margin:0 auto;
+}
+.kal-res4-jh-toptext{
+	padding-top:50px;
+}
+.kal-res4-jh-toptext>h2{
+	font-size:32px;
+	font-weight:bold;
+	padding-bottom:20px;
+}
+.kal-res4-jh-toptext>p{
+	font-size:14px;
+}
+.kal-res4-jh-toptext span{
+	color:red;
+	font-weight:bold;
+}
+.kal-res4-jh-noticebox-wrapper{
+	width:720px;
+	height:50px;
+	float:left;
+}
+.kal-res4-jh-textbox{
+	background:#0180a3;
+	padding:15px 0;
+	text-align:center;
+	margin-top:30px;
+}
+.kal-res4-jh-textbox>span{
+	padding:0 100px;
+	color:white;
+	font-weight:bold;
+	font-size:18px;	
+}
+.kal-res4-jh-textbox-contents{
+	border:1px solid #0180a3;
+	padding:20px 20px;
+	font-size:14px;
+}
+.kal-res4-jh-textbox-contents span{
+	font-weight:bold;
+	color:red;
+}
+.kal-res4-jh-checkbox{
+	border-top:1px dotted #0180a3;
+	margin:20px 0 0;
+	padding:20px 0 0; 
+	font-weight:bold;
+}
+.kal-res4-jh-noticebox{
+	background:#0180a3;
+	padding:15px 0;
+	text-align:center;
+	margin-top:30px;
+}
+.kal-res4-jh-noticebox>span{
+	padding:0 100px;
+	color:white;
+	font-weight:bold;
+	font-size:18px;	
+}
+.kal-res4-jh-noticecontents{
+	border:1px solid #0180a3;
+	padding:20px 20px;
+	font-size:14px;
+}
+.kal-res4-jh-submitbtn{
+	background-color:#0180a3;
+	width:160px;
+	color:white;
+	font-size:14px;
+	border-radius:3px;
+	cursor:pointer;
+	padding:7px 26px;
+	display:inline-block;
+	box-shadow:0 1px 2px 1px rgba(0,0,0,0.2);
+	border:1px solid #0180a3;
+	margin-bottom:15px;
+}
+.kal-res4-jh-submitbtn:hover{
+	color:white;
+	border:1px solid #186686;
+	background:#094f68;
+	transition:0.5s;
+}
+
+/* 
+===============
+   res5 시작 
+=============== 
+*/
+
+.kal-res5-jh-wrapper{
+	width:100%;
+}
+.kal-res5-jh-subwrapper{
+	width:960px;
+	margin:0 auto;
+}
+.kal-res5-jh-toptext{
+	padding-top:50px;
+}
+.kal-res5-jh-toptext h2{
+	font-size:32px;
+	font-weight:bold;
+	padding-bottom:20px;
+}
+.kal-res5-jh-toptext p{
+	font-size:14px;
+}
+.kal-res5-jh-toptext span{
+	color:red;
+	font-weight:bold;
+}
+.kal-res5-jh-passengerinfotext{
+	background:#0180a3;
+	padding:15px 0;
+	text-align:center;
+	margin-top:30px;
+}
+.kal-res5-jh-passengerinfotext span{
+	padding:15px 100px;
+	color:white;
+	font-weight:bold;
+	font-size:18px;
+}
+.kal-res5-jh-passengerinfocontents{
+	text-align:center;
+	padding-top:30px;
+	padding-bottom:30px;
+	border:1px solid #0180a3;
+}
+.kal-res5-jh-passengerinfocontents p{
+	display:inline-block;
+	padding:5px 25px;
+}
+.kal-res5-jh-passengerinfocontents-name{
+	font-weight:bold;
+}
+.kal-res5-jh-passengerinfocontents-gender{
+	font-weight:bold;
+}
+.kal-res5-jh-flightinfotext{
+	background:#0180a3;
+	padding:15px 0;
+	text-align:center;
+	margin-top:30px;
+}
+.kal-res5-jh-flightinfotext span{
+	padding:15px 100px;
+	color:white;
+	font-weight:bold;
+	font-size:18px;
+}
+.kal-res5-jh-kal-res5-jh-flightinfocontents{
+	text-align:center;
+	border:1px solid #0180a3;
+	padding-bottom:25px;
+}
+.kal-res5-jh-kal-res5-jh-flightinfocontents>p{
+	font-weight:bold;
+	padding:25px 0;
+	font-size:18px;
+}
+.kal-res5-jh-kal-res5-jh-flightinfocontents-flight{
+	font-weight:bold;
+	display:block;
+	color:red;
+	padding-bottom:10px;
+}
+.kal-res5-jh-submit{
+	background-color:#0180a3;
+	width:200px;
+	color:white;
+	font-size:18px;
+	border-radius:3px;
+	cursor:pointer;
+	padding:7px 26px;
+	display:inline-block;
+	box-shadow:0 1px 2px 1px rgba(0,0,0,0.2);
+	border:1px solid #0180a3;
+	display:block;
+	margin:20px auto 0;
+}
+.kal-res5-jh-submit:hover{
+	color:white;
+	border:1px solid #186686;
+	background:#094f68;
+	transition:0.5s;
+}
+
+/* 회원가입 페이지 시작 */
+
+.kal-jh-regist-main-wrapper{
+	width:100%;
+}
+.kal-regist-main-logo{
+	display:block;
+	margin:40px auto 0;
+	text-align:center;
+}
+.kal-jh-regist-sub-wrapper1{
+	width:500px;
+	margin:40px auto 0;
+	border:1px solid #0180a3;
+	padding:30px 50px;
+	border-bottom:none;
+}
+.kal-jh-regist-sub-wrapper1 h1{
+	font-size:30px;
+	font-weight:bold;
+	text-align:center;
+}
+.kal-jh-regist-headerText{
+	font-size:14px;
+	text-align:center;
+	padding:30px 0;
+	display:block;
+	color:#0180a3;
+}
+.kal-jh-regist-area1{
+	padding-bottom:20px;
+}
+.kal-jh-regist-inputBox-text-id{
+	padding-right:50px;
+}
+.kal-jh-regist-inputBox-id{
+	width:200px;
+	padding:10px;
+	font-size:14px;
+	letter-spacing:1px;
+	margin:0 auto;
+	border-radius: 5px;
+    border: 1px solid #0180a3;
+}
+.kal-jh-regist-area1-idcheckBtn{
+	margin-left:10px;
+	background-color:#0180a3;
+	width:110px;
+	color:white;
+	font-size:15px;
+	border-radius:3px;
+	cursor:pointer;
+	padding:8px 10px;
+	display:inline-block;
+	box-shadow:0 1px 2px 1px rgba(0,0,0,0.2);
+	border:1px solid #0180a3;
+}
+.kal-jh-regist-area1-idcheckBtn:hover{
+	color:white;
+	border:1px solid #186686;
+	background:#094f68;
+	transition:0.5s;
+}
+.id-check-text{
+	font-size:14px;
+	letter-spacing:1px;
+	padding:20px 0 0;
+	text-align:left;
+	display:inline-block;
+	position:relative;
+	left:105px;
+	color:red;
+}
+.kal-jh-regist-inputBox-text-pw{
+	padding-right:35px;
+}
+.kal-jh-regist-inputBox-pw{
+	width:200px;
+	padding:10px;
+	font-size:14px;
+	letter-spacing:1px;
+	margin:0 auto;
+	border-radius: 5px;
+    border: 1px solid #0180a3;
+}
+.pw-check-text{
+	font-size:14px;
+	letter-spacing:1px;
+	padding:20px 0 0;
+	text-align:left;
+	display:inline-block;
+	position:relative;
+	left:105px;
+	color:red;
+}
+.kal-jh-regist-sub-wrapper2{
+	width:500px;
+	margin:0 auto 80px;
+	border:1px solid #0180a3;
+	padding:30px 50px 0;
+}
+.kal-jh-regist-area3{
+	padding-bottom:20px;
+}
+.kal-jh-regist-inputBox-text-korname{
+	padding-right:38px;
+}
+.kal-jh-regist-inputBox-korname{
+	width:200px;
+	padding:10px;
+	font-size:14px;
+	letter-spacing:1px;
+	margin:0 auto;
+	border-radius: 5px;
+    border: 1px solid #0180a3;
+}
+.korname-check-text{
+	font-size:14px;
+	letter-spacing:1px;
+	padding:20px 0 0;
+	text-align:left;
+	display:inline-block;
+	position:relative;
+	left:105px;
+	color:red;
+}
+.kal-jh-regist-inputBox-text-familyname{
+	font-family:'Malgun Gothic';
+	padding-right:12px;
+}
+.kal-jh-regist-area4{
+	padding-bottom:20px;
+}
+.kal-jh-regist-inputBox-familyname{
+	width:200px;
+	padding:10px;
+	font-size:14px;
+	letter-spacing:1px;
+	margin:0 auto;
+	border-radius: 5px;
+    border: 1px solid #0180a3;
+}
+.familyname-check-text{
+	font-size:14px;
+	letter-spacing:1px;
+	padding:20px 0 0;
+	text-align:left;
+	display:inline-block;
+	position:relative;
+	left:105px;
+	color:red;
+}
+.kal-jh-regist-area5{
+	padding-bottom:20px;
+}
+.kal-jh-regist-inputBox-text-firstname{
+	font-family:'Malgun Gothic';
+	padding-right:29px;
+}
+.kal-jh-regist-inputBox-firstname{
+	width:200px;
+	padding:10px;
+	font-size:14px;
+	letter-spacing:1px;
+	margin:0 auto;
+	border-radius: 5px;
+    border: 1px solid #0180a3;
+}
+.firstname-check-text{
+	font-size:14px;
+	letter-spacing:1px;
+	padding:20px 0 0;
+	text-align:left;
+	display:inline-block;
+	position:relative;
+	left:105px;
+	color:red;
+}
+.kal-jh-regist-area6{
+	padding-bottom:20px;
+}
+.kal-jh-regist-inputBox-text-phoneno{
+	padding-right:58px;
+}
+.kal-jh-regist-inputBox-phoneno{
+	width:200px;
+	padding:10px;
+	font-size:14px;
+	letter-spacing:1px;
+	margin:0 auto;
+	border-radius: 5px;
+    border: 1px solid #0180a3;
+}
+.phoneno-check-text{
+	font-size:14px;
+	letter-spacing:1px;
+	padding:20px 0 0;
+	text-align:left;
+	display:inline-block;
+	position:relative;
+	left:105px;
+	color:red;
+}
+.kal-jh-regist-area7{
+	padding-bottom:20px;
+}
+.kal-jh-regist-inputBox-text-birth{
+	padding-right:43px;
+}
+.kal-jh-regist-inputBox-birth{
+	width:200px;
+	padding:10px;
+	font-size:14px;
+	letter-spacing:1px;
+	margin:0 auto;
+	border-radius: 5px;
+    border: 1px solid #0180a3;
+}
+.birth-check-text{
+	font-size:14px;
+	letter-spacing:1px;
+	padding:20px 0 0;
+	text-align:left;
+	display:inline-block;
+	position:relative;
+	left:105px;
+	color:red;
+}
+.kal-jh-regist-area8{
+	padding-bottom:20px;
+}
+.kal-jh-regist-inputBox-text-email{
+	padding-right:60px;
+}
+.kal-jh-regist-inputBox-email{
+	width:250px;
+	padding:10px;
+	font-size:14px;
+	letter-spacing:1px;
+	margin:0 auto;
+	border-radius: 5px;
+    border: 1px solid #0180a3;
+}
+.passportno-check-text{
+	font-size:14px;
+	letter-spacing:1px;
+	padding:20px 0 0;
+	text-align:left;
+	display:inline-block;
+	position:relative;
+	left:105px;
+	color:red;
+}
+.kal-jh-regist-inputBox-text-addr{
+	padding-right:60px;
+}
+.kal-jh-regist-inputBox-addr1{
+	width:250px;
+	padding:10px;
+	font-size:14px;
+	letter-spacing:1px;
+	margin:0 auto;
+	border-radius: 5px;
+    border: 1px solid #0180a3;
+}
+.kal-jh-regist-inputBox-addr2{
+	display:block;
+	width:250px;
+	padding:10px;
+	font-size:14px;
+	letter-spacing:1px;
+	margin:20px 108px 0;
+	border-radius: 5px;
+    border: 1px solid #0180a3;
+}
+.kal-jh-regist-inputBox-addr-btn{
+	margin-left:10px;
+	background-color:#0180a3;
+	width:100px;
+	color:white;
+	font-size:16px;
+	border-radius:3px;
+	cursor:pointer;
+	padding:7.5px 5px;
+	display:inline-block;
+	box-shadow:0 1px 2px 1px rgba(0,0,0,0.2);
+	border:1px solid #0180a3;
+}
+.kal-jh-regist-inputBox-addr-btn:hover{
+	color:white;
+	border:1px solid #186686;
+	background:#094f68;
+	transition:0.5s;
+}
+.kal-jh-regist-inputBox-email-btn{
+	margin-left:10px;
+	background-color:#0180a3;
+	width:100px;
+	color:white;
+	font-size:16px;
+	border-radius:3px;
+	cursor:pointer;
+	padding:7.5px 5px;
+	display:inline-block;
+	box-shadow:0 1px 2px 1px rgba(0,0,0,0.2);
+	border:1px solid #0180a3;
+}
+.kal-jh-regist-inputBox-email-btn:hover{
+	color:white;
+	border:1px solid #186686;
+	background:#094f68;
+	transition:0.5s;
+}
+.kal-jh-auth-head-text{
+	text-align:center;
+	font-size:20px;
+	font-weight:bold;
+	color:#0180a3;
+	letter-spacing:1px;
+	margin-bottom:10px;
+	margin-top:10px;
+}
+.kal-jh-auth-wrapper{
+	width:100%;
+	text-align:center;
+	padding:10px 0;
+}
+.kal-jh-auth-input{
+	width:250px;
+	padding:10px;
+	font-size:14px;
+	letter-spacing:1px;
+	text-align:center;
+	margin:0 auto 20px;
+	border-radius: 5px;
+    border: 1px solid #0180a3;
+}
+.kal-jh-auth-submit-btn{
+	margin-left:10px;
+	background-color:#0180a3;
+	width:100px;
+	color:white;
+	font-size:16px;
+	border-radius:3px;
+	cursor:pointer;
+	padding:7.5px 5px;
+	display:inline-block;
+	box-shadow:0 1px 2px 1px rgba(0,0,0,0.2);
+	border:1px solid #0180a3;
+}
+.kal-jh-auth-submit-btn:hover{
+	color:white;
+	border:1px solid #186686;
+	background:#094f68;
+	transition:0.5s;
+}
+.kal-jh-regist-area9{
+	padding-bottom:20px;
+}
+.kal-jh-regist-inputBox-text-passportno{
+	padding-right:44px;
+}
+.kal-jh-regist-inputBox-passportno{
+	width:200px;
+	padding:10px;
+	font-size:14px;
+	letter-spacing:1px;
+	margin:0 auto;
+	border-radius: 5px;
+    border: 1px solid #0180a3;
+}
+.kal-jh-regist-area10{
+	padding-bottom:20px;
+}
+.kal-jh-regist-inputBox-text-gender{
+	padding-right:75px;
+}
+.kal-jh-regist-area11 span{
+	margin-right:22px;
+}
+.kal-jh-regist-inputBox-gender{
+	margin-right:20px;
+}
+.kal-jh-regist-area12{
+	text-align:center;
+	padding-top:20px;
+}
+.kal-jh-regist-submit{
+	background-color:#0180a3;
+	width:150px;
+	color:white;
+	font-size:18px;
+	margin-top:10px;
+	margin-bottom:30px;
+	border-radius:3px;
+	cursor:pointer;
+	padding:7px 26px;
+	display:inline-block;
+	box-shadow:0 1px 2px 1px rgba(0,0,0,0.2);
+	border:1px solid #0180a3;
+}
+.kal-jh-regist-submit:hover{
+	color:white;
+	border:1px solid #186686;
+	background:#094f68;
+	transition:0.5s;
+}
+.addr-check-text{
+	font-size:14px;
+	letter-spacing:1px;
+	padding:20px 0 0;
+	text-align:left;
+	display:inline-block;
+	position:relative;
+	left:105px;
+	color:red;
+}
+.gender-check-text{
+	font-size:14px;
+	letter-spacing:1px;
+	padding:20px 0 0;
+	text-align:left;
+	display:inline-block;
+	position:relative;
+	left:105px;
+	color:red;
+}
+.email-check-text{
+	font-size:14px;
+	letter-spacing:1px;
+	padding:20px 0 0;
+	text-align:left;
+	display:inline-block;
+	position:relative;
+	left:105px;
+	color:red;
+}
+/* mypage navigation css */
+.kal-jh-mypage-navibar-ul{
+	width:100%;
+    list-style-type: none;
+    overflow: hidden;
+    background-color: #2980a0;
+}
+.kal-jh-mypage-navibar-li {
+    float: left;
+}
+.kal-jh-mypage-navibar-li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.kal-jh-mypage-navibar-li a:hover {
+	color:black;
+    background-color: #eaf0f2;
+}
+/* mypage css */
+.kal-jh-mypage-container{
+	width:100%;
+	min-height:100%;
+}
+.kal-jh-mypage-subwrapper{
+	width:960px;
+	border: 1px solid #0180a3;
+	margin:50px auto;
+}
+.kal-jh-mypage-container h1{
+	font-size:28px;
+	font-weight:bold;
+	text-align:center;
+	margin-top:50px;
+}
+/* mypage userinfo css */
+.kal-jh-mypage-userinfo-content-wrapper1{
+	border-bottom:1px solid #0180a3;
+}
+.kal-jh-mypage-maintext{
+	font-size:20px;
+	font-weight:bold;
+	padding:20px 20px 0;
+}
+.kal-jh-mypage-userInfo-txt1{
+	padding:0 20px 20px;
+}
+.kal-jh-mypage-userInfo-txt1 span{
+	display:inline-block;
+}
+.kal-jh-mypage-userInfo-korname-text{
+	font-weight:bold;
+	padding-right:30px;
+}
+.kal-jh-mypage-userInfo-korname{
+	padding:5px 0;
+}
+.kal-jh-mypage-userInfo-engname-text{
+	font-weight:bold;
+	padding-right:30px;
+}
+.kal-jh-mypage-userInfo-engname{
+	padding:5px 0;
+}
+
+.kal-jh-mypage-userinfo-content-wrapper2{
+	border-bottom:1px solid #0180a3;
+}
+.kal-jh-mypage-userInfo-txt2{
+	padding:0 20px 20px;
+}
+.kal-jh-mypage-userInfo-txt2 span{
+	display:inline-block;
+}
+.kal-jh-mypage-userInfo-email-text{
+	padding-top:20px;
+	font-weight:bold;
+	padding-right:42px;
+}
+.kal-jh-mypage-userInfo-email{
+	padding:5px 0;
+}
+.kal-jh-mypage-userInfo-addr-text{
+	font-weight:bold;
+	padding-right:42px;
+}
+.kal-jh-mypage-userInfo-addr{
+	padding:5px 0;
+}
+.kal-jh-mypage-userInfo-txt3{
+	padding:20px 20px 20px;
+}
+.kal-jh-mypage-userInfo-txt3 span{
+	display:inline-block;
+}
+.kal-jh-mypage-userInfo-phoneno-text{
+	font-weight:bold;
+	padding-right:42px;
+}
+.kal-jh-mypage-userInfo-phoneno{
+	padding:5px 0;
+}
+.kal-jh-mypage-userInfo-passportno-text{
+	font-weight:bold;
+	padding-right:26px;
+}
+.kal-jh-mypage-userInfo-passportno{
+	padding:5px 0;
+}
+/* mypage usermodify css */
+.kal-jh-mypage-userupdate-content-wrapper1{
+	border-bottom:1px solid #0180a3;
+}
+.kal-jh-mypage-userUpdate-txt1{
+	padding:0 20px 20px;
+}
+.kal-jh-mypage-userUpdate-txt1 span{
+	display:inline-block;
+}
+.kal-jh-mypage-userUpdate-korname-text{
+	font-weight:bold;
+	padding-right:30px;
+}
+.kal-jh-mypage-userUpdate-korname{
+	padding:5px 0;
+}
+.kal-jh-mypage-userUpdate-engname-text{
+	font-weight:bold;
+	padding-right:30px;
+}
+.kal-jh-mypage-userUpdate-engname{
+	padding:5px 0;
+}
+.kal-jh-mypage-userUpdate-content-wrapper2{
+	border-bottom:1px solid #0180a3;
+}
+.kal-jh-mypage-userUpdate-txt2{
+	padding:20px 20px 20px;
+}
+.kal-jh-mypage-userUpdate-txt2 span{
+	display:inline-block;
+}
+.kal-jh-mypage-userUpdate-id-text{
+	font-weight:bold;
+	padding-right:52px;
+}
+.kal-jh-mypage-userUpdate-id{
+	padding:10px 0;
+}
+.kal-jh-mypage-userUpdate-pw-text{
+	padding-right:15px;
+	font-weight:bold;
+}
+.kal-jh-mypage-userUpdate-pw{
+	width:200px;
+	padding:10px;
+	font-size:14px;
+	letter-spacing:1px;
+	margin:0 auto;
+	border-radius: 5px;
+    border: 1px solid #0180a3;
+}
+
+
+.kal-jh-mypage-userUpdate-txt3{
+	padding:20px 20px 20px;
+}
+.kal-jh-mypage-userUpdate-txt3 span{
+	display:inline-block;
+}
+.kal-jh-mypage-userUpdate-email-text{
+	padding-right:32px;
+	font-weight:bold;
+}
+.kal-jh-mypage-userUpdate-email{
+	width:200px;
+	padding:10px;
+	font-size:14px;
+	letter-spacing:1px;
+	margin:10px auto;
+	border-radius: 5px;
+    border: 1px solid #0180a3;
+}
+.kal-jh-mypage-userUpdate-phoneno-text{
+	padding-right:32px;
+	font-weight:bold;
+}
+.kal-jh-mypage-userUpdate-phoneno{
+	width:200px;
+	padding:10px;
+	font-size:14px;
+	letter-spacing:1px;
+	margin:10px auto;
+	border-radius: 5px;
+    border: 1px solid #0180a3;
+}
+.kal-jh-mypage-userUpdate-addr-text{
+	padding-right:32px;
+	font-weight:bold;
+}
+.kal-jh-mypage-userUpdate-addr1{
+	width:300px;
+	padding:10px;
+	font-size:14px;
+	letter-spacing:1px;
+	margin:10px auto;
+	border-radius: 5px;
+    border: 1px solid #0180a3;
+}
+.kal-jh-mypage-userUpdate-addr2{
+	display:inline-block;
+	width:300px;
+	padding:10px;
+	font-size:14px;
+	letter-spacing:1px;
+	margin:10px 102px 0;
+	border-radius: 5px;
+    border: 1px solid #0180a3;
+}
+.kal-jh-mypage-userUpdate-addr-btn{
+	margin-left:10px;
+	background-color:#0180a3;
+	width:100px;
+	color:white;
+	font-size:16px;
+	border-radius:3px;
+	cursor:pointer;
+	padding:7.5px 5px;
+	display:inline-block;
+	box-shadow:0 1px 2px 1px rgba(0,0,0,0.2);
+	border:1px solid #0180a3;
+}
+.kal-jh-mypage-userUpdate-addr-btn:hover{
+	color:white;
+	border:1px solid #186686;
+	background:#094f68;
+	transition:0.5s;
+}
+.kal-jh-mypage-userUpdate-content-wrapper4{
+	text-align:center;
+}
+.kal-jh-mypage-userUpdate-submitBtn{
+	background-color:#0180a3;
+	width:150px;
+	color:white;
+	font-size:18px;
+	margin-top:10px;
+	margin-bottom:30px;
+	border-radius:3px;
+	cursor:pointer;
+	padding:7px 26px;
+	display:inline-block;
+	box-shadow:0 1px 2px 1px rgba(0,0,0,0.2);
+	border:1px solid #0180a3;
+}
+.kal-jh-mypage-userUpdate-submitBtn:hover{
+	color:white;
+	border:1px solid #186686;
+	background:#094f68;
+	transition:0.5s;
+}
+.mypage-update-pw-check-text{
+	font-size:14px;
+	letter-spacing:1px;
+	padding:20px 0 0;
+	text-align:left;
+	display:block;
+	position:relative;
+	left:105px;
+	color:red;
+}
+.mypage-update-email-check-text{
+	font-size:14px;
+	letter-spacing:1px;
+	padding:10px 0;
+	text-align:left;
+	display:block;
+	position:relative;
+	left:105px;
+	color:red;
+}
+.mypage-update-phoneno-check-text{
+	font-size:14px;
+	letter-spacing:1px;
+	padding:10px 0;
+	text-align:left;
+	display:block;
+	position:relative;
+	left:105px;
+	color:red;
+}
+.mypage-update-addr-check-text{
+	font-size:14px;
+	letter-spacing:1px;
+	padding:10px 0;
+	text-align:left;
+	display:block;
+	position:relative;
+	left:105px;
+	color:red;
+}
+.kal-jh-mypage-userReservation-content-wrapper1{
+	border-bottom:1px solid #0180a3;
+}
+.kal-jh-mypage-userReservation-txt1{
+	padding:0 20px 20px;
+}
+.kal-jh-mypage-userReservation-txt1 span{
+	display:inline-block;
+}
+.kal-jh-mypage-userReservation-korname-text{
+	font-weight:bold;
+	padding-right:30px;
+}
+.kal-jh-mypage-userReservation-korname{
+	padding:5px 0;
+}
+.kal-jh-mypage-userReservation-engname-text{
+	font-weight:bold;
+	padding-right:30px;
+}
+.kal-jh-mypage-userReservation-engname{
+	padding:5px 0;
+}
+.kal-jh-mypage-userReservation-content-wrapper2{
+	border-bottom:1px solid #0180a3;
+}
+.kal-jh-mypage-userReservation-txt2{
+	padding:20px 20px 20px;
+}
+.kal-jh-mypage-userReservation-txt2 p{
+	font-size:18px;
+	font-weight:bold;
+	padding-bottom:20px;
+}
+.kal-jh-mypage-userReservation-sche-date1-text{
+	font-weight:bold;
+	padding-right:52px;
+}
+.kal-jh-mypage-userReservation-departure1-text{
+	font-weight:bold;
+	padding-right:50px;
+}
+.kal-jh-mypage-userReservation-departure1{
+	padding:5px 0;
+	display:inline-block;
+}
+.kal-jh-mypage-userReservation-arrival1-text{
+	font-weight:bold;
+	padding-right:50px;
+}
+.kal-jh-mypage-userReservation-arrival1{
+	padding:0 60px;
+}
+.kal-jh-mypage-userReservation-departure-time1-text{
+	font-weight:bold;
+	padding-right:30px;
+}
+.kal-jh-mypage-userReservation-arrival-time1-text{
+	font-weight:bold;
+	padding-right:30px;
+}
+.kal-jh-mypage-userReservation-arrival-time1{
+	padding-left:126px;
+}
+.kal-jh-mypage-userReservation-content-wrapper2{
+	border-bottom:1px solid #0180a3;
+}
+.kal-jh-mypage-userReservation-txt3{
+	padding:20px 20px 20px;
+}
+.kal-jh-mypage-userReservation-txt3 p{
+	font-size:18px;
+	font-weight:bold;
+	padding-bottom:20px;
+}
+.kal-jh-mypage-userReservation-sche-date2-text{
+	font-weight:bold;
+	padding-right:52px;
+}
+.kal-jh-mypage-userReservation-departure2-text{
+	font-weight:bold;
+	padding-right:50px;
+}
+.kal-jh-mypage-userReservation-departure2{
+	padding:5px 0;
+	display:inline-block;
+}
+.kal-jh-mypage-userReservation-arrival2-text{
+	font-weight:bold;
+	padding-right:50px;
+}
+.kal-jh-mypage-userReservation-arrival2{
+	padding:0 35px;
+}
+.kal-jh-mypage-userReservation-departure-time2-text{
+	font-weight:bold;
+	padding-right:30px;
+}
+.kal-jh-mypage-userReservation-arrival-time2-text{
+	font-weight:bold;
+	padding-right:30px;
+}
+.kal-jh-mypage-userReservation-arrival-time2{
+	padding-left:126px;
+}
+
+/* userDelete page css */
+
+.kal-jh-mypage-userDelete-txt1{
+	padding:70px 20px;
+}
+.kal-jh-mypage-userDelete-txt1 span{
+	display:inline-block;
+}
+.kal-jh-mypage-userDelete-pw-text{
+	padding-right:30px;
+	font-weight:bold;
+}
+.kal-jh-mypage-userDelete-pw{
+	width:200px;
+	padding:10px;
+	font-size:14px;
+	letter-spacing:1px;
+	border-radius: 5px;
+    border: 1px solid #0180a3;
+}
+.kal-jh-mypage-userDelete-submitBtn{
+	color:white;
+	width:120px;
+	padding:8px 5px;
+	border:1px solid #186686;
+	background:#0180a3;
+	font-size:16px;
+	border-radius:10px;
+	margin-left:20px;
+	cursor:pointer;
+}
+
+.kal-jh-mypage-userDelete-submitBtn:hover {
+	color:white;
+	border:1px solid #186686;
+	background:#094f68;
+	transition:0.5s;
+}
+.mypage-delete-pw-check-text{
+	font-size:14px;
+	letter-spacing:1px;
+	padding:20px 25px 0;
+	text-align:left;
+	display:block;
+	position:relative;
+	left:105px;
+	color:red;
+}
+/* review  */
+.kal-review-main-wrapper{
+   background-attachment:fixed;
+   width:100%;
+   background-image:url("/web/resources/img/customerService/review-bg.jpg");
+   background-size:cover;
+   height:720px;
+}
+.kal-review-sub-wrapper-bg{
+   background-color: rgba(51, 51, 51, 0.4);
+   background:transparent black;
+   margin:50px auto;
+   width:960px;
+   height:400px;
+   
+}
+.kal-review-sub-wrapper{
+   width:960px;
+   margin:0 auto;
+   padding-top:60px;
+}
+.kal-review-sub-wrapper-headertext{
+   font-size:28px;
+   font-weight:bold;
+   color:white;
+   width:960px;
+   margin:0 auto;
+   padding-top:60px;
+}
+.kal-review-sub-wrapper-left-box{
+   float:left;
+   margin-left:35px;
+}
+.kal-review-type-ul {
+   width:300px;
+   background-color: #f1f1f1;
+}
+.kal-review-type-li1 a{
+   display: block;
+   background-color:#0180a3;
+   text-decoration: none;
+   text-align: center;
+   color:white;
+   font-weight:bold;
+   font-size:16px;
+   padding: 16px 16px;
+}
+.kal-review-type-li2 a {
+   display: block;
+   color:black;
+   padding: 16px 16px;
+   text-decoration: none;
+   font-family: 맑은고딕;
+   text-align: center;
+   font-weight:bold;
+   font-size:16px;
+}
+.kal-review-type-li2 a:hover {
+   display: block;
+   color:white;
+   padding: 16px 16px;
+   text-decoration: none;
+   font-family: 맑은고딕;
+   text-align: center;
+   font-weight:bold;
+   font-size:16px;
+   background-color:#303030;
+}
+.kal-review-type-li3 a {
+   display: block;
+   color:black;
+   padding: 16px 16px;
+   text-decoration: none;
+   font-family: 맑은고딕;
+   text-align: center;
+   font-weight:bold;
+   font-size:16px;
+}
+.kal-review-type-li3 a:hover {
+   display: block;
+   color:white;
+   padding: 16px 16px;
+   text-decoration: none;
+   font-family: 맑은고딕;
+   text-align: center;
+   font-weight:bold;
+   font-size:16px;
+   background-color:#303030;
+}
+.kal-review-type-li4 a {
+   display: block;
+   color:black;
+   padding: 16px 16px;
+   text-decoration: none;
+   font-family: 맑은고딕;
+   text-align: center;
+   font-weight:bold;
+   font-size:16px;
+}
+.kal-review-type-li4 a:hover {
+   display: block;
+   color:white;
+   padding: 16px 16px;
+   text-decoration: none;
+   font-family: 맑은고딕;
+   text-align: center;
+   font-weight:bold;
+   font-size:16px;
+   background-color:#303030;
+}
+.kal-review-type-li5 a {
+   display: block;
+   color:black;
+   padding: 16px 16px;
+   text-decoration: none;
+   font-family: 맑은고딕;
+   text-align: center;
+   font-weight:bold;
+   font-size:16px;
+}
+.kal-review-type-li5 a:hover {
+   display: block;
+   color:white;
+   padding: 16px 16px;
+   text-decoration: none;
+   font-family: 맑은고딕;
+   text-align: center;
+   font-weight:bold;
+   font-size:16px;
+   background-color:#303030;
+}
+.kal-review-sub-wrapper-right-box-input{
+   width:550px;
+   height:240px;
+   border:none;
+   margin-left:40px;
+}
+.kal-review-star-icon{
+   width:20px;
+   position:relative;
+   right:70px;
+   top:105px;
+}
+.kal-review-pic-icon{
+   width:20px;
+   position:relative;
+   bottom:30px;
+   left:890px;
+}
+.kal-review-post-btn{
+   background-color:#0180a3;
+   width:120px;
+   color:white;
+   font-size:14px;
+   margin-top:30px;
+   margin-bottom:35px;
+   border-radius:3px;
+   cursor:pointer;
+   padding:7px 26px;
+   display:inline-block;
+   box-shadow:0 1px 2px 1px rgba(0,0,0,0.2);
+   border:1px solid #0180a3;
+   float:right;
+   margin-right:35px;
+}
+.kal-review-post-btn:hover{
+   background-color:#004656;
+   width:120px;
+   color:white;
+   font-size:14px;
+   margin-top:30px;
+   margin-bottom:35px;
+   border-radius:3px;
+   cursor:pointer;
+   padding:7px 26px;
+   display:inline-block;
+   box-shadow:0 1px 2px 1px rgba(0,0,0,0.2);
+   border:1px solid #004656;
+   float:right;
+   margin-right:35px;
+}
+/* 
+===============
+   jihoo css end
+=============== 
+*/
+
+/* 
+===============
+   seungsu css start
+=============== 
+*/
+
+
+.kal-ss-search-form{
+ 	text-align: center;
+ 	margin-top: 50px;
+ 	margin-right: 17px;
+ }
+ .kal-ss-search-label{
+ 		position: absolute;
+ 		height: 20px;
+ 		width: 1px;
+ 		overflow: hidden;
+ 		clip :rect(1px, 1px, 1px, 1px);
+ 		word-wrap:initial;
+ 		padding: 2px;
+ }
+ .kal-ss-search-text{
+ 	font-family: "맑은 고딕";
+ 	font-weight: bold;
+ 	font-size: 15px;
+ 	height: 24px;
+ 	padding: 2px;
+ }
+ .kal-ss-search-button{
+ 	width: 80px;
+ 	height: 33px;
+ 	font-size: 16px;
+ 	padding: 40px,0;
+ 	margin-bottom: 5px;
+ 	vertical-align: middle;
+ 	text-align: center;
+ 	border-color: #186686;
+ 	color: #186686;
+ 	background-color: #ffffff;
+ 	border-style: solid;
+ }
+  .kal-ss-search-button:hover{
+  	outline : black;
+	background-color: #186686;
+	color: white;
+	
+ }
+ .kal-ss-search-result{
+    display : block;
+ 	padding-left: 0;
+ 	margin-left: 10%;
+ 	font-size: 12px;
+ 	
+ }
+.kal-ss-search-result a:hover,.kal-ss-search-result a:focus{
+ 	outline:1px solid black;
+ 	outline-offset : 2px;
+ }
+ .kal-ss-search-result li{
+  list-style: none;
+  font-size: 12px;
+  margin-bottom: 20px;
+  margin-top: 2px;
+ }
+  .kal-ss-search-result a{
+   display : block;
+   color:  #186686;
+   font-size: 14px;
+   text-decoration: none ;
+   width: 90%;
+ }
+  .kal-ss-search-result p{
+   margin-top: 2px;
+ }
+ .kal-ss-search-count{
+   margin-left: 10%;
+   margin-top: 20px;
+   margin-bottom: 20px;
+ }
+ .kal-faq-ss-bg{
+   background-image : url(/web/resources/img/faq/faq_bg_image.jpg);
+   background-attachment: fixed;
+   width: 100%;
+   height: 100%;
+ }
+.kal-faq-ss-title{
+	position: relative;
+	font-size: 60px;
+	line-height: normal;
+	color : #ffffff;
+	margin-left: 155px;
+	margin-bottm: 200px;
+	top: 20px;
+	opacity: 0.779235;
+}
+.kal-faq-ss-wrapper{
+	position:relative;
+	z-index: 505;
+	border: 1px solid white;
+	margin-left: 10%;
+	margin-right: 10%;
+	margin-bottom: 50px;
+	margin-top:20px;
+	padding-bottom:70px;
+	background-color: rgba(255,255,255,0.95);
+	font-family: "맑은 고딕";
+	
+}
+.kal-faq-ss-h2{
+	font-size : 30px;
+	font-weight : bold;
+	text-align: center;
+	margin:20px,0,0,0;
+	line-height:1.2;
+	font-style: normal;
+	padding-bottom: 1px;
+	margin-top: 50px;
+	margin-right: 20px;
+}
+.kal-faq-ss{
+	margin: 0 auto 10px auto;
+	width:100%;
+}
+.kal-faq-ss-select{
+	float: left;
+	width: 55%;
+	height: 30px;
+    width: 10%;
+}
+.kal-faq-ss-select-style{
+	height: 47px;
+	background-image: url(/web/resources/img/faq/select-image.png);
+	background-repeat:no-repeat;
+	background-position: right center;
+	background-color: white;
+	width:170%;
+	margin-right:30px;
+	overflow: hidden;
+	-webkit-appearance: none;
+}
+.kal-faq-ss-search{
+    border: 1px solid #ccc;
+    font-size: 13px;
+   	right: 20px;
+    padding: 16px 42px 14px 15px;
+    width: 115%;
+    margin-left: 33px;
+    margin-top: 0px;
+ }
+.kal-faq-ss-form{
+	position:relative;
+	margin: 0 auto;
+	width: 90%;
+	
+}
+.kal-faq-ss-formstyle{
+	margin-right: 90px;
+}
+.kal-faq-ss-form > div{
+	display: inline-block;
+}
+.kal-faq-ss-form > div label{
+	display: block;
+	font-size: 14px;
+	margin: 10px, 0;
+	text-align: left;
+}
+.kal-faq-ss-label{
+	width:35%;
+	height: 17px;
+	margin-bottom: 1px; 
+}
+.kal-faq-ss-holder{
+   position: absolute;
+   top: 60%;
+   left: 130px;
+   font-size: 13px;
+   color: #757575;
+   font-weight: normal;
+   z-index: 100;
+   line-height: 10%;
+ }
+.kal-search-ss-button{
+ 	width: 110px;
+ 	height: 47px;
+ 	font-size: 16px;
+ 	padding: 40px,0;
+ 	margin-bottom: 3px;
+ 	margin-left : 130px;
+ 	vertical-align: middle;
+ 	text-align: center;
+ 	border-color: #186686;
+ 	color: #186686;
+ 	background-color: #ffffff;
+ 	border-style: solid;
+ 	padding-left: 10px;
+ 	text-align: left;
+ }
+.kal-search-ss-button-image{
+ 	background: url(/web/resources/img/faq/button-image.png) no-repeat;
+ 	width: 8px;
+ 	height: 13px;
+ 	display: inline-block;
+ 	float : right;
+ 	right: 0;
+ 	margin-top: 5px;
+ 	margin-right: 5px;
+ }
+.kal-search-ss-button:hover,.kal-search-ss-button:focus{
+	outline : black;
+	background-color: #186686;
+	color: white;
+}
+.kal-search-ss-contanier{
+ 	border-left: 1px solid #6b6969;
+ 	position: relative;
+ 	display: block;
+ 	margin-left: 28px;
+ 	margin-top: 20px;
+ 	height: 100px;
+}
+.kal-search-ss-button-submit{
+    background-color: white;
+    background-image: url(/web/resources/img/faq/search-image.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    border: 0;
+    bottom: 21px;
+    font-size: 0;
+    height: 43px;
+    position: absolute;
+    margin-left:130%;
+    width: 50px;
+}
+.kal-search-ss-button-submit:hover{
+	border:1px solid #186686;
+}
+.kal-search-ss-button-all{
+	padding: 11px, 42px,10px,20px;
+	text-align: left;
+	font-size: 16px;
+	background-color: transparent;
+	border : 2px solid #186686;
+	color : #186686;
+	position: relative;
+	width: 100%;
+	height: 47px;
+	margin-top: 30px;
+}
+.kal-search-ss-button-all span{
+ 	background: url(/web/resources/img/faq/button-image.png) no-repeat;
+ 	width: 8px;
+ 	height: 13px;
+ 	display: inline-block;
+ 	float : right;
+ 	right: 0;
+ 	margin-top: 5px;
+ 	margin-right: 5px;
+}
+.kal-search-ss-button-all:hover{
+	outline : black;
+	background-color: #186686;
+	color: white
+}
+.kal-result-ss-count{
+   color: black;
+   font-size: 18px;
+   margin: 40px 0 20px;
+   padding: 0;
+   margin-left: 20px;
+   }
+.kal-result-ss-count li{
+   color: #1a7e97;
+   display: inline-block;
+   float: left;
+   list-style: none;
+   margin-left: 10px;;
+   padding: 0;
+   margin-top: 15px;
+}
+.kal-result-ss-before{
+  	background: url(/web/resources/img/faq/button-image.png) no-repeat;
+ 	width: 8px;
+ 	height: 13px;
+ 	display: inline-block;
+ 	float : right;
+ 	right: 0;
+ 	margin-top: 5px;
+ 	margin-left: 10px;
+}
+.kal-list-ss-ul{
+ 	border: 3px solid black;
+ 	position: relative;
+ 	list-style-type: none;
+ 	margin: 1px 20px -1px 20px;
+}
+ .kal-list-ss-li{
+ 	border-top: 1px solid #ccc;
+ 	margin: 1px 20px -1px 20px;
+ 	position: relative;
+ 	z-index: 1;
+ }
+.kal-list-ss-ul a{
+	color: #1a7e97;
+    cursor: pointer;
+	font-size: 14px;
+	font-weight: bold;
+	line-height: 20px;
+	padding: 20px 50px 20px 10px;
+	display: block;
+ }
+  .kal-list-ss-plus{
+ 	border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    line-height: 10px;
+    padding: 5px;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 0;
+    margin: 20px 10px;
+    background: url(/web/resources/img/faq/faq-image.png) left top no-repeat;
+}
+.kal-list-ss-answer{
+ 	color: black;
+ 	display: none;
+}
+.kal-list-ss-ans{
+	position: absolute;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+    clip: rect(1px,1px,1px,1px);
+    word-break: initial;
+    word-wrap: initial;
+}
+.kal-faq-ss-label{
+	 margin-bottom: 5px;
+}
+.kal-faq-ss-searchlabel{
+	 margin-bottom: 20px;
+	 margin-left: 33px;
+}
+.kal-faq-ss-bar{
+	 margin-right:5px;
+}
+.kal-faq-ss-list-border{
+	 border: 1px fixed block;
+	 margin-top: 100px
+}
+.kal-faq-ss-spacebar{
+	margin-left: 50px;
+}
+
+/* 
+===============
+   seungsu css end
+=============== 
+*/
+  	 
+/* 
+===============
+   songsang css start
+=============== 
+*/
+.kal-ssh-plane{
+	width:100%;
+	text-align:center;
+}
+.kal-ssh-plane>img{
+	
+	padding-top:20px;
+}
+.kal-ssh-first-seat{
+	text-align:center;
+	position:relative;
+	bottom:750px;
+}
+.kal-ssh-first-span{
+	display:hidden;
+	margin-right: 10px;
+	margin-left: 10px;
+}
+.kal-ssh-second-seat{
+	text-align:center;
+	position:relative;
+	bottom:620px;
+}
+
+.kal-ssh-second-span{
+	display:hidden;
+	margin-right: 25px;
+}
+.kal-ssh-third-seat{
+	text-align:center;
+	position:relative;
+	bottom:550px;
+}
+
+.kal-ssh-third-span{
+	display:hidden;
+	margin-right: 20px;
+}
+.kal-ssh-select-seat{
+	text-align:right;
+	position:relative;
+	bottom:700px;
+}
+/* 
+===============
+   songsang css end
+=============== 
+*/
+
+/* 
+===============
+   main css start
+=============== 
+*/
+
+.kal-background-section{
+	width:100%;
+	height:600px;
+	position:relative;
+	overflow:hidden;
+}
+.kal-main-background1{
+	background-image:url("/web/resources/img/main/main-background1.jpg");
+	height:600px;
+	z-index:3;
+	background-size:cover;
+	background-position:center;
+}
+.kal-maintext1{
+	width:960px;
+	margin:0 auto;
+	padding:100px 0;
+}
+.kal-maintext1>h2{
+	font-size:36px;
+	font-weight:bold;
+	color:#234884;
+}
+.kal-maintext1 p{
+	font-size:20px;
+	padding-top:10px;
+	color:#234884;
+}
+.kal-maintext2{
+	width:960px;
+	margin:0 auto;
+	padding:100px 0;
+}
+.kal-maintext2>h2{
+	font-size:36px;
+	font-weight:bold;
+	color:#234884;
+}
+.kal-maintext2 p{
+	font-size:20px;
+	padding-top:10px;
+	color:#234884;
+}
+.kal-maintext3{
+	width:960px;
+	margin:0 auto;
+	padding:100px 0;
+}
+.kal-maintext3>h2{
+	font-size:36px;
+	font-weight:bold;
+	color:black;
+}
+.kal-maintext3 p{
+	font-size:20px;
+	padding-top:10px;
+	color:black;
+}
+.kal-main-background2{
+	background-image:url("/web/resources/img/main/main-background2.jpg");
+	height:600px;
+	z-index:2;
+	background-size:cover;
+	background-position:center;
+}
+.kal-main-background3{
+	background-image:url("/web/resources/img/main/main-background3.jpg");
+	height:600px;
+	z-index:1;
+	background-size:cover;
+	background-position:center;
+}
+.kal-temparea{
+	position:relative;
+	top:570px;
+}
+.kal-main-event-wrapper{
+	position:relative;
+	bottom:50px;
+	width:150px;
+	margin:-30px auto;
+	background-color:#52b9d8;
+	border-radius:3px;
+	padding:20px 20px;
+	text-align:center;
+	box-shadow: 1px 1px 10px #888888;
+	cursor:pointer;
+}
+.kal-main-event-wrapper:hover{
+	background-color:#2657a0;
+	transition:0.5s;
+}
+.kal-main-event-wrapper a{
+	color:white;
+	font-size:18px;
+	font-weight:bold;
+	display:inline-block;
+	margin:0 auto;
+	text-decoration:none;
+}
+
+/* 
+===============
+   main css end
+=============== 
+*/
+
+/* 
+===============
+   navigation + footer css start
+=============== 
+*/
+
+ /* 헤더 부분 */
+   .kal-header{
+      width:100%;
+   }
+   /* 서브 네비게이션 */
+   /* before-login */
+   .kal-before-login-sub-gnb{
+      height:40px;
+      background:#434343;
+   }
+   .kal-before-login-sub-left-menu{
+      width:300px;
+      float:left;
+      margin-top:11px;
+      margin-left:10px;
+   }
+   .kal-before-login-sub-left-menu-region-select-btn{
+      background:none;
+      border:none;
+      color:white;
+      font-weight:bold;
+      font-size:12px;
+      cursor:pointer;
+   }
+   .kal-before-login-region-select-btn>img{
+   	  padding-left:8px; 
+   }
+   .kal-before-login-sub-left-menu-text1{
+      color:white;
+      font-weight:bold;
+      font-size:12px;
+   }
+   .kal-before-login-sub-left-menu-text1>img{
+      padding-right:10px;
+   }
+   .kal-before-login-sub-left-menu-text2{
+   	  color:white;
+   	  font-size:12px;
+   	  font-weight:bold;
+   	  padding-right:5px;
+   	  text-decoration:underline;
+   }
+   .kal-before-login-sub-left-menu-text3{
+   	  color:white;
+   	  font-size:12px;
+   	  text-decoration:none;
+   }
+   .kal-before-login-sub-right-menu{
+   	  width:300px;
+   	  float:right;
+   	  margin-top:11px;
+   	  margin-right:4px;
+   }
+   .kal-before-login-sub-right-menu-login{
+      text-decoration:none;
+      font-weight:bold;
+      font-size:12px;
+      color:white;
+   }
+   .kal-before-login-sub-right-menu-regist{
+      text-decoration:none;
+      font-weight:bold;
+      font-size:12px;
+      color:white;
+   }
+   
+   .kal-before-login-sub-right-menu-admin{
+      text-decoration:none;
+      font-weight:bold;
+      font-size:12px;
+      color:white;
+   }
+   .kal-before-login-sub-right-menu-wishlist{
+      text-decoration:none;
+      font-weight:bold;
+      font-size:12px;
+      color:white;
+      padding-right:8px;
+   }
+   .kal-before-login-sub-right-menu-search{
+      font-size:12px;
+      color:gray;
+      width:80px;
+   }
+   .kal-before-login-sub-right-menu-search-icon>img{
+      position:absolute;
+      top:14px;
+      right:52px;
+   }
+   /* after-login */
+   .kal-after-login-sub-gnb{
+      height:40px;
+      background:#434343;
+   }
+   .kal-after-login-sub-left-menu{
+      width:300px;
+      float:left;
+      margin-top:11px;
+      margin-left:10px;
+   }
+   .kal-after-login-sub-left-menu-region-select-btn{
+      background:none;
+      border:none;
+      color:white;
+      font-weight:bold;
+      font-size:12px;
+      cursor:pointer;
+   }
+   .kal-after-login-region-select-btn>img{
+   	  padding-left:8px; 
+   }
+   .kal-after-login-sub-left-menu-text1{
+      color:white;
+      font-weight:bold;
+      font-size:12px;
+   }
+   .kal-after-login-sub-left-menu-text1>img{
+      padding-right:10px;
+   }
+   .kal-after-login-sub-left-menu-text2{
+   	  color:white;
+   	  font-size:12px;
+   	  font-weight:bold;
+   	  padding-right:5px;
+   	  text-decoration:underline;
+   }
+   .kal-after-login-sub-left-menu-text3{
+   	  color:white;
+   	  font-size:12px;
+   	  text-decoration:none;
+   }
+   .kal-after-login-sub-right-menu{
+   	  width:320px;
+   	  float:right;
+   	  margin-top:11px;
+   	  margin-right:4px;
+   }
+   .kal-after-login-sub-right-menu-logout{
+      text-decoration:none;
+      font-weight:bold;
+      font-size:12px;
+      color:white;
+   }
+   .kal-after-login-sub-right-menu-mypage{
+      text-decoration:none;
+      font-weight:bold;
+      font-size:12px;
+      color:white;
+   }
+   
+   .kal-after-login-sub-right-menu-myregist{
+      text-decoration:none;
+      font-weight:bold;
+      font-size:12px;
+      color:white;
+   }
+   .kal-after-login-sub-right-menu-wishlist{
+      text-decoration:none;
+      font-weight:bold;
+      font-size:12px;
+      color:white;
+      padding-right:8px;
+   }
+   .kal-after-login-sub-right-menu-search{
+      font-size:12px;
+      color:gray;
+      width:80px;
+   }
+   .kal-after-login-sub-right-menu-search-icon>img{
+      position:absolute;
+      top:14px;
+      right:36px;
+   }
+   /* 메인 네비게이션 */
+   .kal-main-gnb{
+      height:60px;
+      border-bottom:4px solid #4f8ba3;
+   }
+   .kal-main-logo{
+      width:245px;
+      float:left;
+      padding-top:16px;
+      padding-left:10px;
+   }
+   .kal-main-right-menu{
+   	  width:690px;
+   	  float:right;
+   	  padding-top:10px;
+   	  padding-right:10px;
+   }
+   .kal-main-right-menu-reservation-btn{
+      cursor:pointer;
+      padding:0 20px 0 40px;
+      height:40px;
+      background:none;
+      border:none;
+      font-size:18px;
+      color:#333;
+      background-image:url("/web/resources/img/main/top-nav-topMenu1.png");
+      background-position:left;
+      background-repeat:no-repeat;
+   }
+   .after-login-kal-main-right-menu-reservation-btn{
+      cursor:pointer;
+      padding:0 20px 0 40px;
+      height:40px;
+      background:none;
+      border:none;
+      font-size:18px;
+      color:#333;
+      background-image:url("/web/resources/img/main/top-nav-topMenu1.png");
+      background-position:left;
+      background-repeat:no-repeat;
+   }
+   .kal-main-right-menu-skypass-btn{
+      cursor:pointer;
+      padding:0 20px 0 40px;
+      height:40px;
+      background:none;
+      border:none;
+      font-size:18px;
+      color:#333;
+      background-image:url("/web/resources/img/main/top-nav-topMenu2.png");
+      background-position:left;
+      background-repeat:no-repeat;
+   }
+   .kal-main-right-menu-service-btn{
+      cursor:pointer;
+      padding:0 20px 0 40px;
+      height:40px;
+      background:none;
+      border:none;
+      font-size:18px;
+      color:#333;
+      background-image:url("/web/resources/img/main/top-nav-topMenu3.png");
+      background-position:left;
+      background-repeat:no-repeat;
+      position: relative;
+   }
+   .kal-service-btn-content{
+    text-decoration:none;
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 800;
+	}
+   .kal-service-btn-content>a{
+   	  color:#4f8ba3;
+   	  text-decoration:none;
+   	  font-size:16px;
+   	  padding:10px 20px;
+   }
+   .kal-service-btn-content-faq{
+   	  display:inline-block;
+      margin-bottom:3px;
+   }
+   .after-login-kal-service-btn-content-faq{
+   	  display:inline-block;
+      margin-bottom:3px;
+   }
+   .kal-service-btn-content-question{
+   	  display:inline-block;
+      margin-bottom:5px;
+   }
+   .after-kal-service-btn-content-question{
+   	  display:inline-block;
+      margin-bottom:3px;
+   }
+   .after-login-kal-service-btn-content-question{
+   	  display:inline-block;
+      margin-bottom:3px;
+   }
+   .kal-service-btn-content-review{
+   	  display:inline-block;
+      margin-bottom:3px;
+   }
+   .after-login-kal-service-btn-content-review{
+   	  display:inline-block;
+      margin-bottom:3px;
+   }
+   .kal-main-right-menu-service-btn:hover .kal-service-btn-content{
+    display: block;
+	}
+   .kal-main-right-menu-promotion-btn{
+      cursor:pointer;
+      padding:0 20px 0 40px;
+      height:40px;
+      background:none;
+      border:none;
+      font-size:18px;
+      color:#333;
+      background-image:url("/web/resources/img/main/top-nav-topMenu4.png");
+      background-position:left;
+      background-repeat:no-repeat;
+   }
+   
+   /* 풋터 부분 */
+   .kal-footer{
+      width:100%;
+      height:400px;
+      background-image:url("/web/resources/img/main/footer-background.jpg");
+      background-repeat:no-repeat;
+      background-size:100%; 
+   }
+   .kal-footer-wrap{
+      padding:100px 280px;
+   }
+   .kal-footer-left-content{
+      width:900px;
+      float:left;
+   }
+   .kal-footer-left-content-menu{
+      position:relative;
+   }
+   .kal-footer-left-content-menu h2{
+      color:white;
+      font-weight:bold;
+      font-size:18px;
+   }
+   .kal-footer-left-content-menu-1{
+      width:180px;
+   }
+   .kal-footer-left-content-menu-1>ul{
+      margin-top:20px;
+      padding:0 10px;
+      border-left:1px solid white;
+   }
+   .kal-footer-left-content-menu-1-li1{
+      padding-bottom:10px;
+   }
+   .kal-footer-left-content-menu-1-li1>a{
+      color:white;
+      text-decoration:none;
+   }
+   .kal-footer-left-content-menu-1-li2{
+      padding-bottom:10px;
+   }
+   .kal-footer-left-content-menu-1-li2>a{
+      color:white;
+      text-decoration:none;
+   }
+   .kal-footer-left-content-menu-1-li3{
+      padding-bottom:10px;
+   }
+   .kal-footer-left-content-menu-1-li3>a{
+      color:white;
+      text-decoration:none;
+   }
+   .kal-footer-left-content-menu-1-li4{
+      padding-bottom:10px;
+   }
+   .kal-footer-left-content-menu-1-li4>a{
+      color:white;
+      text-decoration:none;
+   }
+   /* ------------------- */
+   .kal-footer-left-content-menu-2{
+      position:absolute;
+      top:0;
+      left:250px;
+      width:180px;
+   }
+   .kal-footer-left-content-menu-2{
+      width:180px;
+   }
+   .kal-footer-left-content-menu-2>ul{
+      margin-top:20px;
+      padding:0 10px;
+      border-left:1px solid white;
+   }
+   .kal-footer-left-content-menu-2-li1{
+      padding-bottom:10px;
+   }
+   .kal-footer-left-content-menu-2-li1>a{
+      color:white;
+      text-decoration:none;
+   }
+   .kal-footer-left-content-menu-2-li2{
+      padding-bottom:10px;
+   }
+   .kal-footer-left-content-menu-2-li2>a{
+      color:white;
+      text-decoration:none;
+   }
+   .kal-footer-left-content-menu-2-li3{
+      padding-bottom:10px;
+   }
+   .kal-footer-left-content-menu-2-li3>a{
+      color:white;
+      text-decoration:none;
+   }
+   .kal-footer-left-content-menu-2-li4{
+      padding-bottom:10px;
+   }
+   .kal-footer-left-content-menu-2-li4>a{
+      color:white;
+      text-decoration:none;
+   }
+   /* -------------------------- */
+   .kal-footer-left-content-menu-3{
+      position:absolute;
+      top:0;
+      left:500px;
+      width:180px;
+   }
+   .kal-footer-left-content-menu-3{
+      width:180px;
+   }
+   .kal-footer-left-content-menu-3>ul{
+      margin-top:20px;
+      padding:0 10px;
+      border-left:1px solid white;
+   }
+   .kal-footer-left-content-menu-3-li1{
+      padding-bottom:10px;
+   }
+   .kal-footer-left-content-menu-3-li1>a{
+      color:white;
+      text-decoration:none;
+   }
+   .kal-footer-left-content-menu-3-li2{
+      padding-bottom:10px;
+   }
+   .kal-footer-left-content-menu-3-li2>a{
+      color:white;
+      text-decoration:none;
+   }
+   .kal-footer-left-content-menu-3-li3{
+      padding-bottom:10px;
+   }
+   .kal-footer-left-content-menu-3-li3>a{
+      color:white;
+      text-decoration:none;
+   }
+   .kal-footer-left-content-menu-3-li4{
+      padding-bottom:10px;
+   }
+   .kal-footer-left-content-menu-3-li4>a{
+      color:white;
+      text-decoration:none;
+   }
+   /* -------------------------------- */
+   .kal-footer-left-content-menu-4{
+      position:absolute;
+      top:0;
+      left:750px;
+      width:180px;
+   }
+   .kal-footer-left-content-menu-4{
+      width:180px;
+   }
+   .kal-footer-left-content-menu-4>ul{
+      margin-top:20px;
+      padding:0 10px;
+      border-left:1px solid white;
+   }
+   .kal-footer-left-content-menu-4-li1{
+      padding-bottom:10px;
+   }
+   .kal-footer-left-content-menu-4-li1>a{
+      color:white;
+      text-decoration:none;
+   }
+   .kal-footer-left-content-menu-4-li2{
+      padding-bottom:10px;
+   }
+   .kal-footer-left-content-menu-4-li2>a{
+      color:white;
+      text-decoration:none;
+   }
+   .kal-footer-left-content-menu-4-li3{
+      padding-bottom:10px;
+   }
+   .kal-footer-left-content-menu-4-li3>a{
+      color:white;
+      text-decoration:none;
+   }
+   .kal-footer-left-content-menu-4-li4{
+      padding-bottom:10px;
+   }
+   .kal-footer-left-content-menu-4-li4>a{
+      color:white;
+      text-decoration:none;
+   }
+   
+   .kal-footer-right-content{
+   	  float:right;
+   	  background-image:url("/web/resources/img/main/logo-visitkorea.png");
+   	  background-repeat:no-repeat;
+	  width:88px;
+	  height:59px;
+   }
+   .kal-footer-left-content-address-sns{
+      margin-top:50px;
+      text-align:right;
+   }
+    .kal-footer-left-content-address-sns img{
+      margin-right:10px;
+   }
+
+/* 
+===============
+   navigation + footer css end
+=============== 
+*/
+
+/* 
+===============
+   kimhayun css start
+=============== 
+*/
+.kal-hy-grade-star-rating {font-size:0; letter-spacing:-4px;}
+.kal-hy-grade-star-rating a {
+    font-size:22px;
+    letter-spacing:0;
+    display:inline-block;
+    margin-left:5px;
+    color:#ccc;
+    text-decoration:none;
+}
+.kal-hy-grade-star-rating a:first-child {margin-left:0;}
+.kal-hy-grade-star-rating a.on {color:#777;}
+
+/* 
+===============
+   kimhayun css end
+=============== 
+*/
+
+
