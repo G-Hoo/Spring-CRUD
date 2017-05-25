@@ -2,19 +2,23 @@ package com.kal.web.controller;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Random;
+
+import javax.mail.internet.InternetAddress;
+import javax.mail.internet.MimeMessage;
+import javax.mail.internet.MimeMessage.RecipientType;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
-
 import com.kal.web.domain.Member;
 import com.kal.web.mapper.MemberMapper;
 import com.kal.web.service.MemberService;
-import com.kal.web.util.EmailAuthUtil;
 
 @RestController
 public class MemberController {
@@ -22,6 +26,7 @@ public class MemberController {
 	@Autowired MemberMapper mapper;
 	@Autowired Member member;
 	@Autowired MemberService memberService;
+	@Autowired private JavaMailSender mailSender; // xml에 등록한 bean autowired
 	
 	@RequestMapping(value="/login",
 					method=RequestMethod.POST,
@@ -167,21 +172,28 @@ public class MemberController {
 	}
 	
 	@RequestMapping(value="/emailAuth",
-					method=RequestMethod.POST,
-					consumes="application/json")
-	public @ResponseBody Map<?,?> emailAuth(@RequestBody Map<String,Object> paramMap) throws Exception {
-		logger.info("MemberController-emailAuth() {}","ENTER");
-		EmailAuthUtil auth = new EmailAuthUtil();
-		Map<String,String> map = new HashMap<>();
-		String email = (String) paramMap.get("authNo");
-		String authNum = "";
-		
-		authNum = auth.RandomNum();
-		auth.sendEmail(email.toString(), authNum);
-		
-		map.put("email", email);
-		map.put("authNum", authNum);
-		
-		return map;
+			method=RequestMethod.POST,
+			consumes="application/json")
+	public @ResponseBody Map<?,?> sendMail(@RequestBody String to) throws Exception {
+		logger.info("MemberController-sendMail() {}","ENTER");
+		Map <String,Object> map = new HashMap<>();
+		String from="kalcrewofficial@gmail.com";
+		String subject="대한항공 인증번호";
+		String temp1 ="인증번호  [ ";
+		String text = String.valueOf(new Random().nextInt(100000) + 10000);// 10000 ~ 99999
+		String temp2 =" ] ";
+		String emailText = temp1 + text+ temp2 ;
+		System.out.println("생성된 랜덤숫자 : " + text);
+	    MimeMessage message = mailSender.createMimeMessage();
+	    
+	    message.setFrom(new InternetAddress(from));  
+	    message.addRecipient(RecipientType.TO, new InternetAddress(to));
+	    message.setSubject(subject);
+	    message.setText(emailText, "utf-8", "html");
+	    
+	    mailSender.send(message);
+	    
+	    map.put("randomNo", text);
+	    return map;
 	}
 }

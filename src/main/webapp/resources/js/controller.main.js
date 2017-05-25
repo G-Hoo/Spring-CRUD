@@ -69,6 +69,14 @@ main.member=(function(){
 		   main.reservation.onCreate();
 	   });
 	   
+	   $('.after-kal-service-btn-content-question').on('click',function(){
+		   main.boardQna.addQna();
+	   });
+	   
+	   $('.after-login-kal-service-btn-content-faq').on('click',function(){
+		   main.boardQna.faq();
+	   });
+	   
 	   $('.kal-main-logo').on('click',function(){
 		   mainPageAfterLogin();
 	   });
@@ -132,7 +140,7 @@ main.member=(function(){
 			alert('로그인이 필요한 기능입니다.');
 		});
 		$('.kal-service-btn-content-review').on('click',function(){
-			alert('로그인이 필요한 기능입니다.');
+			alert('로그인이 필요한 기능입니다.');   
 		});
 		$('.kal-before-login-sub-right-menu-regist').on('click',function(){
 			alert('회원가입 버튼 클릭');
@@ -199,6 +207,11 @@ main.member=(function(){
 	   userDelete();
    };
    var userUpdate = function(){
+	   
+	   /*주소지 찾기 시작*/
+	   $('.kal-jh-mypage-userUpdate-addr-btn').postcodifyPopUp();
+	   /*주소지 찾기 끝*/
+	   
 	   $('.kal-jh-mypage-userUpdate-submitBtn').on('click',function(){
 		   alert('회원 정보 수정 버튼 클릭');
 		   var newPw = $('.kal-jh-mypage-userUpdate-pw').val();
@@ -307,6 +320,51 @@ main.member=(function(){
    };
    var goRegist=function(){
 	   var registIdFlag = false;
+	   var emailAuthFlag = false;
+	   var tempRandom;
+	   /*본인 인증 시작*/
+	   var emailAuthContent = function(){
+		   $.magnificPopup.open({
+				items : {
+					src : '<div class="white-popup">'
+						+'<p id="emailAuthContent" class="kal-jh-auth-head-text">인증 번호</p>'
+						+'<div class="kal-jh-auth-wrapper">'
+						+	'<input id="emailAuthNo" class="kal-jh-auth-input" placeholder="인증번호를 입력해주세요." type="text" name="authNo"></br>'
+						+	'<button id="emailAuthBtn" class="kal-jh-auth-submit-btn" onSubmit="return check();">인증하기</button>'
+						+'</div>'
+						+'</div>',
+					type: 'inline'
+					},
+					fixedContentPos: true,  
+			        fixedBgPos: true,  
+			        overflowY: 'auto',  
+			        closeBtnInside: true,  
+			        preloader: false,
+			        midClick: true,  
+			        removalDelay: 300,  
+			        closeOnBgClick: false
+			}); 
+		   $('#emailAuthBtn').on('click',function(){
+				var emailAuthNoText=$('#emailAuthNo').val();
+				var emailText=$('.kal-jh-regist-inputBox-email').val();
+				if(emailAuthNoText.length==0){
+					alert('인증번호를 입력해주세요');
+					
+				}else{
+					alert('인증을 거친 본인 인증 버튼 클릭');
+					if(emailAuthNoText===tempRandom){
+						alert('본인 인증에 성공하셨습니다.');
+						emailAuthFlag = true;
+						$.magnificPopup.close();
+					}else{
+						alert('본인 인증에 실패하셨습니다.');
+					}
+				}
+			});
+	   };
+	   
+	   /*본인 인증 끝*/
+	   
 			$('#wrapper').empty();
 			$('#wrapper').append(regist());
 			$('.kal-regist-main-logo').on('click',function(){
@@ -344,75 +402,36 @@ main.member=(function(){
 			/*이메일 본인 인증*/
 			$('.kal-jh-regist-inputBox-email-btn').on('click',function(){
 				alert('본인인증 버튼 클릭');
-				var emailText=$('.kal-jh-regist-inputBox-email').val();
-				if(emailText.length==0){
-					alert('이메일을 써주시길 바랍니다.');
-				}else{
-					alert('본인 확인 페이지로 넘어갑니다.');
-					$.magnificPopup.open({
-						closeBtnInside:true,
-						closeOnContentClick:false,
-						alignTop: true,
-						fixedBgPos:true,
-						fixedContentPos:false,
-						items:{src:
-							'<form class="white-popup">'
-							+	'<p class="kal-jh-auth-head-text">인증 번호</p>'
-							+	'<div class="kal-jh-auth-wrapper">'
-							+		'<input id="emailAuthNo" class="kal-jh-auth-input" placeholder="인증번호 7자리를 입력해주세요." type="text" name="authNo"></br>'
-							+		'<button id="emailAuthBtn" class="kal-jh-auth-submit-btn" onSubmit="return check();">인증하기</button>'
-							+	'</div>'
-							+'</form>'
-						},
-						midClick:true,
-						overflowY:'auto',
-						removalDelay:'0',
-						type:'inline'});
-				}
 				
-				$('#emailAuthBtn').on('click',function(){
-					var emailAuthNoText=$('#emailAuthNo').val();
-					if(emailAuthNoText.length==0){
-						alert('인증번호를 입력해주세요')
-					}else{
-						alert('인증을 거친 본인 인증 버튼 클릭');
-						$.ajax({
-							url : $.context() + '/emailAuth',
-							method : "POST",
-							data : JSON.stringify({
-								authNo : $('#emailAuthNo').val()
-							}),
-							dataType : "json",
-							contentType : "application/json",
-							success : function(data){
-								function check(){
-									var form = document.authenform;
-									var authNum = data.authNum;
-									if(!form.authnum.value){
-										alert('인증번호를 입력하세요');
-									}if(form.authnum.value!=authNum){
-										alert('틀린 인증번호입니다. 다시 입력해주세요');
-									}if(form.authnum.value==authNum){
-										alert('인증완료');
-										opener.document.userinput.mailCheck.value="인증완료";
-										self.close();
-									}
-								}
-							},
-							error : function(xhr,status,msg){
-								alert('로그인 실패 이유 :'+msg);
-								
-							}
-						});
-					}
-					
-				});
-				$('.btn').on('click',function(){
-					alert($('#code').val());
-				});
-				return false;
+				var emailText=$('.kal-jh-regist-inputBox-email').val();
+				if(member.validation.emailCheck(emailText)==false){
+					alert('이메일 양식을 확인해주시기 바랍니다.');
+				}
+
+				if(member.validation.emailCheck(emailText)==true){
+					alert('본인 확인 페이지로 넘어갑니다.');
+					$.ajax({
+						url : $.context() + '/emailAuth',
+						method : "POST",
+						data : emailText,
+						dataType : "json",
+						contentType : "application/json",
+						success : function(data){
+							tempRandom = data.randomNo;
+						},
+						error : function(){
+							
+						}
+					});
+					emailAuthContent();
+				}
 			});
 			/*이메일 본인 인증 끝*/
+			
+			/*주소지 찾기 시작*/
+			$('.kal-jh-regist-inputBox-addr-btn').postcodifyPopUp();
+			/*주소지 찾기 끝*/
+			
 			$('.kal-jh-regist-submit').on('click',function(){
 				alert('회원가입 완료 버튼 클릭');
 				var id = $('.kal-jh-regist-inputBox-id').val();
@@ -503,6 +522,13 @@ main.member=(function(){
 				if(member.validation.nullCheck(addrDetail)==true){
 					$('.addr-check-text').html('');
 				}
+				/*본인 인증 정규식*/
+				if(emailAuthFlag==false){
+					$('.emailAuth-check-text').html('<span style="color:red;">본인인증을 해주세요.</span>');
+				}
+				if(emailAuthFlag==true){
+					$('.emailAuth-check-text').html('');
+				}
 				if(member.validation.nullCheck(id)==true &&
 				   member.validation.nullCheck(pw)==true &&
 				   member.validation.korNameCheck(korName)==true &&
@@ -514,7 +540,8 @@ main.member=(function(){
 				   member.validation.emailCheck(email)==true &&
 				   member.validation.nullCheck(addr)==true &&
 				   member.validation.nullCheck(addrDetail)==true &&
-				   registIdFlag ==true){
+				   registIdFlag ==true &&
+				   emailAuthFlag ==true){
 					$.ajax({
 						url : $.context() + '/memberRegist',
 						method : "POST",

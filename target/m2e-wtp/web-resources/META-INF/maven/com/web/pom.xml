@@ -321,9 +321,9 @@
 		</dependency>
 		<!-- smtp 이메일  -->
 		<dependency>
-		    <groupId>javax.mail</groupId>
-		    <artifactId>mail</artifactId>
-		    <version>1.4</version>
+  			<groupId>javax.mail</groupId>
+			<artifactId>mail</artifactId>
+ 			<version>1.4.7</version>
 		</dependency>
 		<!-- smtp 이메일  -->
 	</dependencies>

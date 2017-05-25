@@ -1554,6 +1554,16 @@
 	left:105px;
 	color:red;
 }
+.emailAuth-check-text{
+	font-size:14px;
+	letter-spacing:1px;
+	padding:20px 0 0;
+	text-align:left;
+	display:inline-block;
+	position:relative;
+	left:105px;
+	color:red;
+}
 /* mypage navigation css */
 .kal-jh-mypage-navibar-ul{
 	width:100%;

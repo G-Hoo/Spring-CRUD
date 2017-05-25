@@ -145,7 +145,7 @@ function subGnbAfterLogin(){
 	+		'<input class="kal-after-login-sub-right-menu-search" type="text" placeholder="검색"/>'
 	+		'<a class="kal-after-login-sub-right-menu-search-icon" href="#"><img src="'+$.image()+'/main/icon-search.png"/></a>'
 	+	'</div>'
-	+'</div>'
+	+'</div>';
 }
 function afterLoginMainGnb(){
 	return '<div class="kal-main-gnb">'
@@ -241,11 +241,12 @@ function regist(){
 	+	'<div class="kal-jh-regist-area8">'
 	+		'<span class="kal-jh-regist-inputBox-text-email">이메일</span>'
 	+		'<input class="kal-jh-regist-inputBox-email" type="text" name="email" placeholder="이메일"/><button class="kal-jh-regist-inputBox-email-btn">본인인증</button>'
-	+		'<p class="email-check-text"></p>'
+	+		'<p class="email-check-text"></p></br>'
+	+		'<p class="emailAuth-check-text"></p>'
 	+	'</div>'
 	+	'<div class="kal-jh-regist-area9">'
 	+		'<span class="kal-jh-regist-inputBox-text-addr">주소지</span>'
-	+		'<input class="kal-jh-regist-inputBox-addr1" type="text" name="addr" placeholder="주소"/><button class="kal-jh-regist-inputBox-addr-btn">주소찾기</button>'
+	+		'<input class="kal-jh-regist-inputBox-addr1 postcodify_jibeon_address" type="text" name="addr" placeholder="주소"/><button class="kal-jh-regist-inputBox-addr-btn">주소찾기</button>'
 	+		'<input class="kal-jh-regist-inputBox-addr2" type="text" name="addr" placeholder="상세주소"/>'
 	+		'<p class="addr-check-text"></p>'
 	+	'</div>'
@@ -320,7 +321,7 @@ function mypageUserUpdate(loginedKorName,loginedEngName,loginedId){
 	+		'<p class="mypage-update-email-check-text"></p>'
 	+		'<span class="kal-jh-mypage-userUpdate-phoneno-text">새 연락처</span><input class="kal-jh-mypage-userUpdate-phoneno" name="newphoneno" placeholder="새 연락처"></br>'
 	+		'<p class="mypage-update-phoneno-check-text"></p>'
-	+		'<span class="kal-jh-mypage-userUpdate-addr-text">새 주소지</span><input class="kal-jh-mypage-userUpdate-addr1" name="newaddr" placeholder="새 주소지"><button class="kal-jh-mypage-userUpdate-addr-btn">주소찾기</button></br>'
+	+		'<span class="kal-jh-mypage-userUpdate-addr-text">새 주소지</span><input class="kal-jh-mypage-userUpdate-addr1 postcodify_jibeon_address" name="newaddr" placeholder="새 주소지"><button class="kal-jh-mypage-userUpdate-addr-btn">주소찾기</button></br>'
 	+		'<input class="kal-jh-mypage-userUpdate-addr2" name="newaddr" placeholder="상세주소">'
 	+		'<p class="mypage-update-addr-check-text"></p>'
 	+	'</div>'
